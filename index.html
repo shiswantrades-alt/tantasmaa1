@@ -1,0 +1,1586 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Aylatelier: handmade party dresses and sets for girls, sewn in Cairo. أيلاتيليه: فساتين وأطقم بناتي هاند ميد من القاهرة.">
+<meta name="theme-color" content="#7a2438">
+<link rel="icon" href="img/t/logo.jpg">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}[hidden]{display:none!important}</style>
+<title>Aylatelier</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&family=El+Messiri:wght@500;600;700&family=Tajawal:wght@300;400;500;700&display=swap');
+
+:root{
+  --wine:#7a2438; --wine-deep:#5f1b2b; --rose:#c2788c; --rose-soft:#e7bcc7;
+  --blush:#f6ebeb; --cream:#fbf6f2; --ink:#3a2a2e; --muted:#907a80;
+  --gold:#c2a04d; --line:#efdede; --white:#fff; --ok:#3f8f6b;
+  --shadow:0 10px 30px rgba(122,36,56,.10); --shadow-sm:0 4px 14px rgba(122,36,56,.08);
+  --radius:16px; --maxw:1240px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--cream); color:var(--ink);
+  font-family:'Jost',system-ui,Arial,sans-serif; font-size:16px; line-height:1.55;
+  overflow-x:hidden;
+}
+body.ar{font-family:'Tajawal',system-ui,Arial,sans-serif; line-height:1.8}
+h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif; font-weight:600; line-height:1.15; letter-spacing:.2px}
+body.ar h1, body.ar h2, body.ar h3, body.ar .serif{font-family:'El Messiri',serif}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--wine);color:#fff;border-radius:999px;padding:13px 26px;font-weight:500;font-size:15px;transition:.2s;white-space:nowrap}
+.btn:hover{background:var(--wine-deep);transform:translateY(-1px)}
+.btn.alt{background:#fff;color:var(--wine);border:1.5px solid var(--wine)}
+.btn.alt:hover{background:var(--blush)}
+.btn.wa{background:#25823f}
+.btn.wa:hover{background:#1d6a33}
+.btn.block{width:100%}
+.btn.sm{padding:9px 16px;font-size:14px}
+.muted{color:var(--muted)}
+.center{text-align:center}
+.eyebrow{color:var(--rose);letter-spacing:3px;text-transform:uppercase;font-size:12px;font-weight:600}
+body.ar .eyebrow{letter-spacing:1px}
+section{padding:64px 0}
+.sec-head{max-width:640px;margin:0 auto 40px;text-align:center}
+.sec-head h2{font-size:clamp(28px,4vw,42px);margin:10px 0 8px}
+.sec-head p{color:var(--muted);margin:0}
+
+/* announcement */
+.announce{background:var(--wine);color:#fbe7ec;text-align:center;font-size:13px;letter-spacing:.4px;padding:8px 14px}
+.announce b{color:#fff}
+
+/* header */
+header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:rgba(251,246,242,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:18px;height:74px}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand img{height:46px;width:auto;border-radius:8px}
+.brand .bt{font-family:'Playfair Display',serif;font-weight:700;font-size:22px;color:var(--wine);line-height:1}
+.brand .bt small{display:block;font-family:'Jost',sans-serif;font-weight:400;font-size:9.5px;letter-spacing:4px;color:var(--rose);text-transform:uppercase}
+body.ar .brand .bt small{letter-spacing:1px;font-family:'Tajawal',sans-serif}
+nav.links{display:flex;gap:22px;margin-inline:auto;font-size:15px;font-weight:500}
+nav.links a{padding:6px 2px;position:relative;color:var(--ink);opacity:.85;transition:.2s}
+nav.links a:hover{opacity:1;color:var(--wine)}
+nav.links a::after{content:"";position:absolute;inset-inline-start:0;bottom:-2px;height:2px;width:0;background:var(--wine);transition:.25s}
+nav.links a:hover::after{width:100%}
+.tools{display:flex;align-items:center;gap:6px;flex-shrink:0}
+.icon-btn{width:42px;height:42px;border-radius:999px;display:grid;place-items:center;transition:.2s;position:relative;color:var(--ink)}
+.icon-btn:hover{background:var(--blush);color:var(--wine)}
+.icon-btn svg{width:21px;height:21px}
+.lang-toggle{border:1.5px solid var(--line);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:600;color:var(--wine);transition:.2s;display:flex;align-items:center;gap:6px}
+.lang-toggle:hover{border-color:var(--rose);background:var(--blush)}
+.cart-count{position:absolute;top:2px;inset-inline-end:2px;background:var(--rose);color:#fff;font-size:11px;font-weight:700;min-width:18px;height:18px;border-radius:999px;display:grid;place-items:center;padding:0 4px;font-family:'Jost',sans-serif}
+.hamb{display:none}
+
+/* hero */
+.hero{position:relative;background:linear-gradient(135deg,#f7ecec 0%,#efd9df 100%);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center;padding-top:56px;padding-bottom:56px}
+.hero-copy .eyebrow{margin-bottom:14px;display:block}
+.hero-copy h1{font-size:clamp(34px,5.2vw,60px);margin:0 0 18px;color:var(--wine-deep)}
+.hero-copy p{font-size:18px;color:#6b555a;max-width:460px;margin:0 0 28px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-media{position:relative;aspect-ratio:4/3.4;border-radius:24px;overflow:hidden;box-shadow:var(--shadow)}
+.hero-media img{width:100%;height:100%;object-fit:cover}
+.hero-badge{position:absolute;bottom:16px;inset-inline-start:16px;background:rgba(255,255,255,.94);border-radius:14px;padding:12px 16px;box-shadow:var(--shadow-sm);display:flex;align-items:center;gap:10px}
+.hero-badge .em{font-family:'Playfair Display',serif;color:var(--wine);font-size:22px;line-height:1}
+body.ar .hero-badge .em{font-family:'El Messiri',serif}
+.hero-badge small{color:var(--muted);font-size:12px}
+
+/* trust */
+.trust{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:26px 22px}
+.trust-item{display:flex;align-items:center;gap:12px;justify-content:center}
+.trust-item svg{width:26px;height:26px;color:var(--wine);flex-shrink:0}
+.trust-item b{display:block;font-size:14px}
+.trust-item small{color:var(--muted);font-size:12.5px}
+
+/* categories */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.cat{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:3/3.6;box-shadow:var(--shadow-sm);cursor:pointer;background:#eadfe0}
+.cat img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.cat:hover img{transform:scale(1.06)}
+.cat .lab{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:18px;background:linear-gradient(to top,rgba(58,20,30,.72),rgba(58,20,30,0) 55%);color:#fff}
+.cat .lab b{font-family:'Playfair Display',serif;font-size:21px}
+body.ar .cat .lab b{font-family:'El Messiri',serif}
+.cat .lab span{font-size:13px;opacity:.85}
+
+/* shop */
+.toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:space-between;margin-bottom:26px}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:9px 18px;font-size:14px;font-weight:500;color:var(--ink);transition:.2s}
+.chip:hover{border-color:var(--rose)}
+.chip.active{background:var(--wine);color:#fff;border-color:var(--wine)}
+.toolbar-right{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.search{display:flex;align-items:center;gap:8px;border:1.5px solid var(--line);border-radius:999px;padding:8px 16px;background:#fff}
+.search svg{width:18px;height:18px;color:var(--muted)}
+.search input{border:none;outline:none;font-family:inherit;font-size:14px;width:150px;background:none;color:var(--ink)}
+select.sort{border:1.5px solid var(--line);border-radius:999px;padding:9px 16px;font-family:inherit;font-size:14px;background:#fff;color:var(--ink);cursor:pointer}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:24px}
+.card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);transition:.25s;cursor:pointer;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.card .ph{position:relative;aspect-ratio:4/5;overflow:hidden;background:#efe6e6}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.card:hover .ph img{transform:scale(1.05)}
+.badge{position:absolute;top:12px;inset-inline-start:12px;background:var(--wine);color:#fff;font-size:11px;font-weight:600;letter-spacing:.5px;padding:5px 11px;border-radius:999px;text-transform:uppercase}
+.badge.new{background:var(--rose)}
+.badge.sig{background:var(--gold);color:#3a2a2e}
+.quick{position:absolute;bottom:10px;inset-inline:10px;background:rgba(255,255,255,.96);color:var(--wine);font-weight:600;font-size:14px;border-radius:999px;padding:11px;text-align:center;opacity:0;transform:translateY(8px);transition:.25s;box-shadow:var(--shadow-sm)}
+.card:hover .quick{opacity:1;transform:none}
+.card .info{padding:14px 16px 18px}
+.card .info .cat-tag{font-size:11.5px;color:var(--rose);text-transform:uppercase;letter-spacing:1px;font-weight:600}
+.card .info h3{font-size:17px;margin:5px 0 3px;font-family:'Playfair Display',serif}
+body.ar .card .info h3{font-family:'El Messiri',serif}
+.card .info .price{font-weight:600;color:var(--wine);font-size:16px;font-family:'Jost',sans-serif}
+.card .info .swatch{display:inline-block;width:13px;height:13px;border-radius:50%;border:1px solid rgba(0,0,0,.12);vertical-align:middle;margin-inline-end:5px}
+
+/* lookbook */
+.lookbook{background:var(--blush)}
+.look-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.look{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);position:relative;aspect-ratio:3/2.6;background:#eadfe0}
+.look img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.look:hover img{transform:scale(1.05)}
+.look .cap{position:absolute;bottom:0;inset-inline:0;padding:18px;background:linear-gradient(to top,rgba(58,20,30,.7),transparent);color:#fff;font-family:'Playfair Display',serif;font-size:19px}
+body.ar .look .cap{font-family:'El Messiri',serif}
+
+/* about */
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.about-media{border-radius:24px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3.2}
+.about-media img{width:100%;height:100%;object-fit:cover}
+.about h2{font-size:clamp(26px,3.6vw,38px);margin:8px 0 16px;color:var(--wine-deep)}
+.about p{color:#6b555a;margin:0 0 14px}
+.about .stats{display:flex;gap:30px;margin-top:22px}
+.about .stats .n{font-family:'Playfair Display',serif;font-size:30px;color:var(--wine)}
+body.ar .about .stats .n{font-family:'El Messiri',serif}
+.about .stats small{color:var(--muted);font-size:13px}
+
+/* newsletter */
+.nav-custom{color:var(--wine)!important;font-weight:600;opacity:1!important}
+.nav-custom::before{content:"✦";margin-inline-end:6px;color:var(--gold);font-size:12px}
+.custom{background:linear-gradient(135deg,#f5e4ea 0%,#efd3dc 55%,#ecc9d7 100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden}
+.custom-inner{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;padding-top:60px;padding-bottom:60px}
+.custom-badge{display:inline-flex;align-items:center;gap:6px;background:var(--wine);color:#fff;border-radius:999px;padding:7px 16px;font-size:12.5px;font-weight:600;letter-spacing:.5px;margin-bottom:14px}
+body.ar .custom-badge{letter-spacing:0}
+.custom-copy h2{font-size:clamp(30px,4.6vw,50px);color:var(--wine-deep);margin:4px 0 14px;line-height:1.1}
+.custom-copy .lead{font-size:17px;color:#6b4a52;max-width:520px;margin:0 0 24px}
+.custom-points{display:flex;flex-direction:column;gap:13px;margin-bottom:28px}
+.custom-points>div{display:flex;align-items:center;gap:13px;font-size:15.5px;font-weight:500;color:#4a3238}
+.custom-points .ck{width:30px;height:30px;border-radius:999px;background:#fff;color:var(--wine);display:grid;place-items:center;flex-shrink:0;box-shadow:var(--shadow-sm)}
+.custom-points .ck svg{width:16px;height:16px}
+.custom-cta{display:flex;gap:12px;flex-wrap:wrap}
+.custom-media{position:relative;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3.5;background:#efe0e6}
+.custom-media img{width:100%;height:100%;object-fit:cover}
+.custom-media .tagpill{position:absolute;top:14px;inset-inline-start:14px;background:rgba(255,255,255,.94);color:var(--wine);border-radius:999px;padding:8px 15px;font-weight:600;font-size:12.5px;box-shadow:var(--shadow-sm)}
+.news{background:linear-gradient(135deg,var(--wine),var(--wine-deep));color:#fff;text-align:center}
+.news h2{color:#fff;font-size:clamp(26px,3.6vw,38px);margin:0 0 10px}
+.news p{color:#f0d6dd;margin:0 auto 24px;max-width:480px}
+.news form{display:flex;gap:10px;max-width:460px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+.news input{flex:1;min-width:220px;border:none;border-radius:999px;padding:14px 20px;font-family:inherit;font-size:15px;outline:none}
+.news .btn{background:#fff;color:var(--wine)}
+.news .btn:hover{background:var(--rose-soft)}
+
+/* footer */
+footer.site{background:#2a1418;color:#e9d6da;padding:56px 0 24px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:34px;margin-bottom:34px}
+.foot-grid h4{color:#fff;font-family:'Jost',sans-serif;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 16px}
+body.ar .foot-grid h4{font-family:'Tajawal',sans-serif;letter-spacing:.5px}
+.foot-grid a,.foot-grid p{color:#d8bfc5;font-size:14.5px;margin:0 0 10px;transition:.2s;display:block}
+.foot-grid a:hover{color:#fff}
+.foot-brand .bt{font-family:'Playfair Display',serif;font-size:26px;color:#fff;margin-bottom:10px}
+body.ar .foot-brand .bt{font-family:'El Messiri',serif}
+.socials{display:flex;gap:10px;margin-top:8px}
+.socials a{width:38px;height:38px;border-radius:999px;background:rgba(255,255,255,.09);display:grid;place-items:center}
+.socials a:hover{background:var(--rose)}
+.socials svg{width:18px;height:18px}
+.pay{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.pay span{background:rgba(255,255,255,.09);border-radius:7px;padding:6px 10px;font-size:11.5px;color:#e9d6da}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:#b79aa1}
+
+/* drawer + overlay */
+.overlay{position:fixed;inset:0;background:rgba(40,15,22,.5);opacity:0;visibility:hidden;transition:.3s;z-index:90;backdrop-filter:blur(2px)}
+.overlay.show{opacity:1;visibility:visible}
+.drawer{position:fixed;top:0;inset-inline-end:0;height:100%;width:min(420px,100%);background:var(--cream);z-index:100;display:flex;flex-direction:column;transform:translateX(100%);transition:transform .32s cubic-bezier(.4,0,.2,1);box-shadow:-10px 0 40px rgba(0,0,0,.15);pointer-events:none}
+[dir="rtl"] .drawer{transform:translateX(-100%)}
+.drawer.open,[dir="rtl"] .drawer.open{transform:translateX(0);pointer-events:auto}
+.drawer-head{display:flex;align-items:center;justify-content:space-between;padding:20px 22px;border-bottom:1px solid var(--line)}
+.drawer-head h3{margin:0;font-size:20px}
+.drawer-body{flex:1;overflow-y:auto;padding:14px 22px}
+.drawer-foot{border-top:1px solid var(--line);padding:18px 22px;background:#fff}
+.close-x{width:40px;height:40px;border-radius:999px;display:grid;place-items:center;background:var(--blush);color:var(--wine)}
+.close-x:hover{background:var(--rose-soft)}
+.close-x svg{width:20px;height:20px}
+
+/* cart line */
+.cart-line{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.cart-line .thumb{width:74px;height:92.5px;border-radius:10px;overflow:hidden;flex-shrink:0;background:#efe6e6}
+.cart-line .thumb img{width:100%;height:100%;object-fit:cover}
+.cart-line .cl-info{flex:1;min-width:0}
+.cart-line .cl-info b{font-family:'Playfair Display',serif;font-size:15.5px;font-weight:600;display:block}
+body.ar .cart-line .cl-info b{font-family:'El Messiri',serif}
+.cart-line .cl-info small{color:var(--muted);font-size:13px}
+.cart-line .cl-price{color:var(--wine);font-weight:600;margin-top:4px;font-family:'Jost',sans-serif}
+.qty{display:inline-flex;align-items:center;border:1.5px solid var(--line);border-radius:999px;overflow:hidden;margin-top:8px}
+.qty button{width:30px;height:30px;font-size:17px;color:var(--wine);display:grid;place-items:center}
+.qty button:hover{background:var(--blush)}
+.qty span{min-width:30px;text-align:center;font-size:14px;font-family:'Jost',sans-serif}
+.remove{color:var(--muted);font-size:12.5px;margin-top:8px;display:inline-block}
+.remove:hover{color:var(--wine)}
+.cart-empty{text-align:center;padding:50px 10px;color:var(--muted)}
+.cart-empty svg{width:56px;height:56px;color:var(--rose-soft);margin-bottom:14px}
+.sumline{display:flex;justify-content:space-between;margin-bottom:9px;font-size:15px}
+.sumline.total{font-size:20px;font-weight:600;color:var(--wine);border-top:1px solid var(--line);padding-top:12px;margin-top:6px;font-family:'Playfair Display',serif}
+body.ar .sumline.total{font-family:'El Messiri',serif}
+
+/* modal */
+.modal{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;visibility:hidden;transition:.3s}
+.modal.open{opacity:1;visibility:visible}
+.modal-card{background:var(--cream);border-radius:22px;max-width:920px;width:100%;max-height:90vh;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.3);transform:translateY(16px) scale(.98);transition:.3s;display:flex;flex-direction:column}
+.modal.open .modal-card{transform:none}
+.modal-scroll{overflow-y:auto}
+.pd{display:grid;grid-template-columns:1fr 1fr}
+.pd-media{background:#efe6e6;aspect-ratio:3/3.7}
+.pd-media img{width:100%;height:100%;object-fit:cover}
+.pd-info{padding:30px 32px;position:relative}
+.pd-info .cat-tag{color:var(--rose);text-transform:uppercase;letter-spacing:1.5px;font-size:12px;font-weight:600}
+.pd-info h2{font-size:30px;margin:8px 0 6px;color:var(--wine-deep)}
+.pd-price{font-size:24px;color:var(--wine);font-weight:600;font-family:'Jost',sans-serif;margin-bottom:14px}
+.pd-desc{color:#6b555a;font-size:15px;margin-bottom:18px}
+.pd-row{margin-bottom:16px}
+.pd-row .lbl{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:8px;display:flex;justify-content:space-between;align-items:center}
+.pd-row .lbl a{color:var(--wine);text-transform:none;letter-spacing:0;font-weight:500;font-size:13px;cursor:pointer;text-decoration:underline}
+.sizes{display:flex;gap:8px;flex-wrap:wrap}
+.size{border:1.5px solid var(--line);border-radius:10px;padding:9px 14px;font-size:14px;font-weight:500;background:#fff;transition:.15s;font-family:'Jost',sans-serif}
+.size:hover{border-color:var(--rose)}
+.size.active{background:var(--wine);color:#fff;border-color:var(--wine)}
+.fabric{display:flex;gap:10px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin-top:6px}
+.fabric span{background:#fff;border:1px solid var(--line);border-radius:8px;padding:6px 11px}
+.pd-actions{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.pd-actions .btn{flex:1;min-width:150px}
+.modal-close{position:absolute;top:14px;inset-inline-end:14px;z-index:3}
+
+/* size guide table */
+.sg-table{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}
+.sg-table th,.sg-table td{border:1px solid var(--line);padding:10px 12px;text-align:center;font-family:'Jost',sans-serif}
+.sg-table th{background:var(--blush);color:var(--wine);font-weight:600}
+body.ar .sg-table th, body.ar .sg-table td{font-family:'Tajawal',sans-serif}
+
+/* checkout */
+.co-field{margin-bottom:14px}
+.co-field label{display:block;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:6px}
+.co-field input,.co-field select,.co-field textarea{width:100%;border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;font-family:inherit;font-size:15px;outline:none;background:#fff;color:var(--ink);transition:.15s}
+.co-field input:focus,.co-field select:focus,.co-field textarea:focus{border-color:var(--rose)}
+.co-field input.err,.co-field select.err{border-color:#d0455f;background:#fdf0f2}
+.co-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+input[dir="ltr"]{text-align:start}
+.pay-opts{display:flex;flex-direction:column;gap:10px}
+.pay-opt{display:flex;align-items:center;gap:12px;border:1.5px solid var(--line);border-radius:12px;padding:13px 15px;cursor:pointer;transition:.15s;background:#fff}
+.pay-opt:hover{border-color:var(--rose)}
+.pay-opt.active{border-color:var(--wine);background:var(--blush)}
+.pay-opt input{accent-color:var(--wine);width:18px;height:18px}
+.pay-opt .po-ic{width:34px;height:34px;border-radius:8px;background:var(--blush);display:grid;place-items:center;color:var(--wine);flex-shrink:0}
+.pay-opt .po-ic svg{width:19px;height:19px}
+.pay-opt b{font-size:14.5px;display:block}
+.pay-opt small{color:var(--muted);font-size:12.5px}
+.co-success{text-align:center;padding:20px 6px}
+.co-success .tick{width:74px;height:74px;border-radius:999px;background:#e7f4ec;color:var(--ok);display:grid;place-items:center;margin:0 auto 18px}
+.co-success .tick svg{width:38px;height:38px}
+.co-success h2{color:var(--wine-deep);margin:0 0 6px}
+.order-no{display:inline-block;background:var(--blush);color:var(--wine);border-radius:10px;padding:8px 16px;font-weight:600;letter-spacing:1px;margin:10px 0 18px;font-family:'Jost',sans-serif}
+
+/* toast */
+.toast{position:fixed;bottom:24px;inset-inline:0;display:flex;justify-content:center;z-index:200;pointer-events:none}
+.toast .t{background:var(--ink);color:#fff;border-radius:999px;padding:13px 24px;font-size:14.5px;box-shadow:var(--shadow);display:flex;align-items:center;gap:10px;transform:translateY(20px);opacity:0;transition:.3s;pointer-events:auto}
+.toast .t.show{transform:none;opacity:1}
+.toast .t svg{width:18px;height:18px;color:var(--rose-soft)}
+
+/* mobile menu */
+.mmenu{position:fixed;top:0;inset-inline-start:0;height:100%;width:min(320px,86%);background:var(--cream);z-index:100;transform:translateX(-100%);transition:transform .3s;padding:22px;display:flex;flex-direction:column;gap:4px;box-shadow:10px 0 40px rgba(0,0,0,.15);pointer-events:none}
+[dir="rtl"] .mmenu{transform:translateX(100%)}
+.mmenu.open,[dir="rtl"] .mmenu.open{transform:translateX(0);pointer-events:auto}
+.mmenu a{padding:14px 8px;border-bottom:1px solid var(--line);font-size:17px;font-weight:500;font-family:'Playfair Display',serif}
+body.ar .mmenu a{font-family:'El Messiri',serif}
+.mmenu .mhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+
+@media(max-width:900px){
+  nav.links{display:none}
+  .custom-inner{grid-template-columns:1fr;gap:26px;padding-top:44px;padding-bottom:44px}
+  .custom-media{order:-1;aspect-ratio:4/3;max-height:380px}
+  .hamb{display:grid}
+  .hero .wrap{grid-template-columns:1fr;padding-top:36px;padding-bottom:36px}
+  .hero-media{order:-1;aspect-ratio:4/3;max-height:360px}
+  .trust .wrap{grid-template-columns:1fr 1fr;gap:22px}
+  .cats{grid-template-columns:1fr 1fr}
+  .look-grid{grid-template-columns:1fr}
+  .about .wrap{grid-template-columns:1fr;gap:26px}
+  .about-media{order:-1}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:26px}
+  .pd{grid-template-columns:1fr}
+  .pd-media{aspect-ratio:3/2.6;max-height:340px}
+  .search input{width:110px}
+}
+@media(max-width:560px){
+  section{padding:46px 0}
+  .trust .wrap{grid-template-columns:1fr}
+  .cats{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .co-2{grid-template-columns:1fr}
+  .toolbar{flex-direction:column;align-items:stretch}
+  .brand .bt{font-size:19px}
+}
+
+/* ===== v3: cards with colour dots ===== */
+a.card{color:inherit}
+.card .info .price .from{font-weight:400;color:var(--muted);font-size:13px}
+.dots{display:flex;align-items:center;gap:5px;margin-top:8px;flex-wrap:wrap;min-height:16px}
+.dot{width:14px;height:14px;border-radius:50%;border:1px solid rgba(0,0,0,.14);box-shadow:inset 0 0 0 1.5px #fff;background-size:cover}
+.dot-more,.dot-any{font-size:11px;color:var(--muted);font-weight:600;font-family:'Jost',sans-serif}
+.dot-any{width:14px;height:14px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(#f4a,#fd4,#4d8,#4af,#a6f,#f4a);color:#fff;font-size:11px;line-height:1}
+.ctxt{font-size:12px;color:var(--muted);margin-inline-start:4px}
+
+/* ===== v3: full product page ===== */
+body.pd-open{overflow:hidden}
+.pdpage{position:fixed;inset:0;padding-bottom:env(safe-area-inset-bottom,0px);z-index:70;background:var(--cream);overflow-y:auto;overscroll-behavior:contain;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .25s,transform .25s,visibility .25s}
+.pdpage.open{opacity:1;visibility:visible;transform:none}
+.pd-top{position:sticky;top:0;padding-top:env(safe-area-inset-top,0px);z-index:5;background:rgba(251,246,242,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.pd-top-in{display:flex;align-items:center;gap:12px;height:66px}
+.pd-top .brand img{height:40px}
+.pd-top .tools{margin-inline-start:auto}
+.pd-back{display:inline-flex;align-items:center;gap:6px;font-weight:500;color:var(--wine);padding:8px 12px 8px 8px;border-radius:999px;border:1.5px solid var(--line);background:#fff;font-size:14px}
+.pd-back:hover{border-color:var(--rose)}
+.pd-back svg{width:18px;height:18px}
+.crumbs{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--muted);padding:18px 0 14px;flex-wrap:wrap}
+.crumbs a{cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.crumbs b{color:var(--ink);font-weight:500}
+.pdp{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:40px;align-items:start;padding-bottom:30px}
+.gallery{position:sticky;top:84px;width:100%;max-width:max(420px,calc((100vh - 230px)*.8))}
+.g-main{position:relative;aspect-ratio:4/5;max-width:100%;background:#f1e8e6;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-sm)}
+.g-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .3s;cursor:zoom-in}
+.g-img.on{opacity:1}
+.g-view{position:absolute;bottom:14px;inset-inline-start:14px;background:rgba(255,255,255,.94);color:var(--wine);font-weight:600;font-size:12.5px;padding:6px 12px;border-radius:999px;box-shadow:var(--shadow-sm)}
+.g-view:empty{display:none}
+.g-count{position:absolute;bottom:14px;inset-inline-end:14px;background:rgba(58,42,46,.72);color:#fff;font-size:12px;padding:5px 11px;border-radius:999px;font-family:'Jost',sans-serif}
+.g-nav{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.94);display:grid;place-items:center;box-shadow:var(--shadow-sm);color:var(--wine);z-index:2}
+.g-nav svg{width:20px;height:20px}
+.g-nav.prev{left:12px}.g-nav.next{right:12px}
+.g-nav:hover{background:#fff}
+.g-zoom{position:absolute;top:12px;inset-inline-end:12px;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.94);display:grid;place-items:center;color:var(--wine);box-shadow:var(--shadow-sm);z-index:2}
+.g-zoom svg{width:18px;height:18px}
+.g-thumbs{display:flex;gap:10px;margin-top:12px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}
+.g-th{position:relative;flex:0 0 76px;height:95px;border-radius:12px;overflow:hidden;border:2px solid transparent;background:#efe6e6;padding:0}
+.g-th img{width:100%;height:100%;object-fit:cover}
+.g-th.on{border-color:var(--wine)}
+.g-th span{position:absolute;bottom:0;inset-inline:0;background:rgba(58,20,30,.66);color:#fff;font-size:10.5px;font-weight:600;padding:2px 0;text-align:center}
+.pd-info2 .cat-tag{color:var(--rose);text-transform:uppercase;letter-spacing:1.5px;font-size:12px;font-weight:600}
+body.ar .pd-info2 .cat-tag{letter-spacing:0}
+.pd-name{font-size:clamp(28px,3.4vw,38px);margin:6px 0 8px;color:var(--wine-deep)}
+.pd-price2{font-size:26px;color:var(--wine);font-weight:600;font-family:'Jost',sans-serif}
+.pd-price2 .from{font-size:15px;color:var(--muted);font-weight:400}
+.pd-range{font-size:13px;color:var(--muted);margin:2px 0 18px}
+.pd-block{border-top:1px solid var(--line);padding:16px 0}
+.pd-block .lbl{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+body.ar .pd-block .lbl{letter-spacing:0}
+.pd-block .lbl b{color:var(--ink);text-transform:none;letter-spacing:0}
+.pd-block .lbl a{color:var(--wine);text-transform:none;letter-spacing:0;font-weight:500;cursor:pointer;text-decoration:underline}
+.small{font-size:12px;font-weight:400;text-transform:none;letter-spacing:0}
+.swatches{display:flex;gap:10px;flex-wrap:wrap}
+.sw{position:relative;width:40px;height:40px;border-radius:50%;padding:3px;border:2px solid var(--line);background:#fff;transition:.15s}
+.sw span{display:block;width:100%;height:100%;border-radius:50%;border:1px solid rgba(0,0,0,.1)}
+.sw:hover{border-color:var(--rose)}
+.sw.on{border-color:var(--wine);box-shadow:0 0 0 2px #fff inset}
+.sw .nophoto{position:absolute;top:-3px;inset-inline-end:-3px;width:11px;height:11px;border-radius:50%;background:#fff;border:1.5px dashed var(--muted)}
+.sw-other span{display:grid!important;place-items:center;background:conic-gradient(#f4a,#fd4,#4d8,#4af,#a6f,#f4a);color:#fff;font-weight:700;font-size:18px;line-height:1}
+.other-wrap{margin-top:12px}
+.other-in{width:100%;border:1.5px solid var(--line);border-radius:12px;padding:11px 14px;font-family:inherit;font-size:15px;outline:none;background:#fff;color:var(--ink)}
+.other-in:focus{border-color:var(--rose)}
+.pict-note{display:flex;gap:8px;align-items:flex-start;margin-top:12px;background:#fff;border:1px dashed var(--rose-soft);border-radius:12px;padding:10px 12px;font-size:13.5px;color:#6b555a}
+.pict-note svg{width:18px;height:18px;flex-shrink:0;color:var(--rose);margin-top:2px}
+.sizes2{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.size2{border:1.5px solid var(--line);border-radius:12px;padding:10px 6px;background:#fff;display:flex;flex-direction:column;align-items:center;gap:2px;transition:.15s;font-family:'Jost',sans-serif}
+.size2 b{font-size:15px}
+.size2 small{font-size:12px;color:var(--muted)}
+.size2:hover{border-color:var(--rose)}
+.size2.on{background:var(--wine);border-color:var(--wine);color:#fff}
+.size2.on small{color:#f3d6de}
+.pd-buy{display:flex;gap:10px;align-items:stretch}
+.pd-buy .btn{flex:1}
+.qty-lg{margin-top:0}
+.qty-lg button{width:40px;height:46px;font-size:20px}
+.qty-lg span{min-width:34px;font-size:16px}
+.pd-info2 .btn.wa.block{margin-bottom:6px}
+.pd-desc{color:#6b555a;font-size:15.5px;margin:0 0 12px}
+.pd-perks{display:flex;flex-direction:column;gap:9px;border-top:1px solid var(--line);padding-top:16px;font-size:13.5px;color:#6b555a}
+.pd-perks div{display:flex;gap:9px;align-items:center}
+.pd-perks svg{width:19px;height:19px;color:var(--wine);flex-shrink:0}
+.pd-sec{padding:34px 0 10px;border-top:1px solid var(--line)}
+.pd-sec h2{font-size:clamp(22px,3vw,30px);margin:0 0 18px;color:var(--wine-deep)}
+.allc{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+.allc-i{background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--shadow-sm);border:2px solid transparent;padding:0;text-align:start;transition:.2s}
+.allc-i:hover{transform:translateY(-3px)}
+.allc-i.on{border-color:var(--wine)}
+.allc-i img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.allc-i span{display:flex;align-items:center;gap:7px;padding:9px 11px;font-size:13.5px;font-weight:500}
+.allc-i span i{width:13px;height:13px;border-radius:50%;flex-shrink:0;border:1px solid rgba(0,0,0,.12)}
+.grid.rel{padding-bottom:50px}
+/* lightbox */
+.lightbox{position:fixed;inset:0;z-index:150;background:rgba(24,10,14,.92);display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:.25s}
+.lightbox.open{opacity:1;visibility:visible}
+.lightbox img{max-width:94vw;max-height:84vh;object-fit:contain;border-radius:8px}
+.lb-cap{position:absolute;bottom:18px;inset-inline:0;text-align:center;color:#f3dfe4;font-size:14px}
+.lb-btn{position:absolute;width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;display:grid;place-items:center}
+.lb-btn:hover{background:rgba(255,255,255,.26)}
+.lb-btn svg{width:22px;height:22px}
+.lb-prev{left:16px;top:50%;transform:translateY(-50%)}
+.lb-next{right:16px;top:50%;transform:translateY(-50%)}
+.lb-close{top:16px;right:16px}
+.lightbox.single .lb-prev,.lightbox.single .lb-next{display:none}
+@media(max-width:900px){
+  .pdp{grid-template-columns:1fr;gap:20px}
+  .gallery{position:static;max-width:100%}
+  .pd-top .brand{display:none}
+}
+@media(max-width:560px){
+  .sizes2{grid-template-columns:repeat(2,1fr)}
+  .g-th{flex-basis:64px;height:80px}
+  .pd-back span{display:none}
+  .pd-back{padding:8px}
+  .allc{grid-template-columns:repeat(2,1fr)}
+}
+
+.cl-info .swatch{display:inline-block;width:11px;height:11px;border-radius:50%;border:1px solid rgba(0,0,0,.14);vertical-align:-1px;margin-inline-end:5px}
+.g-img:focus-visible,.sw:focus-visible,.size2:focus-visible,.g-th:focus-visible,a.card:focus-visible{outline:2px solid var(--wine);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){.pdpage,.g-img,.allc-i,.lightbox{transition:none}}
+@media(max-width:560px){
+  .grid{grid-template-columns:1fr 1fr;gap:12px}
+  .card .info{padding:10px 11px 13px}
+  .card .info h3{font-size:14.5px}
+  .card .info .price{font-size:14px}
+  .card .info .cat-tag{font-size:10.5px}
+  .dot{width:12px;height:12px}
+  .ctxt{display:none}
+  .quick{display:none}
+  .badge{top:8px;inset-inline-start:8px;font-size:10px;padding:4px 9px}
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<!-- overlay + drawer + modals get injected/kept here -->
+<div class="overlay" id="overlay" onclick="closeAll()"></div>
+
+<aside class="drawer" id="cartDrawer" aria-label="Cart">
+  <div class="drawer-head">
+    <h3 data-i18n="cartTitle">Your Cart</h3>
+    <button class="close-x" onclick="closeCart()" aria-label="close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+  <div class="drawer-body" id="cartBody"></div>
+  <div class="drawer-foot" id="cartFoot"></div>
+</aside>
+
+<div class="pdpage" id="pdPage" aria-hidden="true" role="dialog"></div>
+
+<div class="lightbox" id="lightbox" onclick="if(event.target===this)closeLightbox()">
+  <button class="lb-btn lb-close" onclick="closeLightbox()" aria-label="close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button class="lb-btn lb-prev" onclick="lbStep(-1)" aria-label="previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></button>
+  <img id="lbImg" alt="">
+  <button class="lb-btn lb-next" onclick="lbStep(1)" aria-label="next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<div class="modal" id="checkoutModal">
+  <div class="modal-card" style="max-width:560px">
+    <div class="drawer-head">
+      <h3 id="coTitle" data-i18n="checkout">Checkout</h3>
+      <button class="close-x" onclick="closeCheckout()" aria-label="close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="modal-scroll" style="padding:22px" id="coBody"></div>
+  </div>
+</div>
+
+<div class="modal" id="sizeModal">
+  <div class="modal-card" style="max-width:520px">
+    <div class="drawer-head">
+      <h3 data-i18n="sizeGuide">Size Guide</h3>
+      <button class="close-x" onclick="closeSize()" aria-label="close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="modal-scroll" style="padding:24px" id="sizeBody"></div>
+  </div>
+</div>
+
+<div class="mmenu" id="mmenu">
+  <div class="mhead">
+    <span class="bt serif" style="color:var(--wine);font-size:22px">Aylatelier</span>
+    <button class="close-x" onclick="closeMenu()" aria-label="close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+  <a onclick="goto('shop','all')" data-i18n="navShop">Shop All</a>
+  <a onclick="goto('shop','dresses')" data-i18n="catDresses">Dresses</a>
+  <a onclick="goto('shop','sets')" data-i18n="catSets">Sets</a>
+  <a onclick="goto('shop','tops')" data-i18n="catTops">Tops</a>
+  <a class="nav-custom" onclick="goto('custom')" data-i18n="navCustom">Custom Orders</a>
+  <a onclick="goto('lookbook')" data-i18n="navLook">Lookbook</a>
+  <a onclick="goto('about')" data-i18n="navAbout">About</a>
+  <a onclick="goto('contact')" data-i18n="navContact">Contact</a>
+</div>
+
+<div class="toast" id="toast"><div class="t" id="toastT"></div></div>
+
+<script>
+const IMAGES = {logo:"img/logo.jpg",banner1:"img/banner1.jpg",banner2:"img/banner2.jpg",banner3:"img/banner3.jpg",custom1:"img/custom1.jpg",custom2:"img/custom2.jpg"};
+
+/* ============ EDIT THESE FOR YOUR REAL STORE ============ */
+const STORE = {
+  whatsapp: "201000000000",     // <-- put your real WhatsApp number, country code no +
+  instagram: "aylatelier",       // <-- your instagram handle
+  email: "hello@aylatelier.com",
+  city_en: "Cairo, Egypt", city_ar: "القاهرة، مصر",
+  freeShipOver: 3000
+};
+/* ======================================================== */
+
+const STR = {
+  en:{
+    dir:"ltr",
+    from:"From", viewDetails:"See colours & details", colorsWord:"colours", allColors:"All colours", anyColor:"Any colour on request",
+    backToShop:"Back to shop", color:"Colour", otherColor:"Other colour", otherColorPh:"Type the colour you want…",
+    typeColorFirst:"Please type the colour you want", picturedIn:"Photo shows", sameDesign:"Same design, sewn to order in the colour you pick.",
+    noPhoto:"Made to order, no photo yet", yearsWord:"years", yrs:"yrs", byPriceSize:"price depends on size",
+    details:"Details & material", allColorsHead:"Every colour of this piece", photos:"photos", youMayLike:"You may also like",
+    front:"Front", back:"Back", frontBack:"Front & back",
+    heroCustom:"Design your own", navCustom:"Custom Orders",
+    customBadge:"Our specialty", customEyebrow:"Made to order",
+    customTitle:"Your design. Your measurements.",
+    customText:"Send us a photo, a sketch, or just your idea plus your little one's measurements, and we sew it to order. Any color, any fabric, any size, made just for her.",
+    customP1:"Made to her exact measurements",
+    customP2:"Your design, colors and fabric",
+    customP3:"One-to-one help from first message to delivery",
+    customCta:"Start a custom order on WhatsApp", customGuide:"Measurement guide",
+    announce:'Handmade in Egypt · Cash on Delivery available · Free shipping over EGP 3,000',
+    navShop:"Shop", navLook:"Lookbook", navAbout:"About", navContact:"Contact",
+    catAll:"All", catDresses:"Dresses", catSets:"Sets", catCasual:"Casual", catTops:"Tops",
+    heroEyebrow:"Aylatelier · Little Couture",
+    heroTitle:"Dresses made for little icons",
+    heroText:"Handcrafted party dresses, two-piece sets and everyday pieces for girls. Sewn with love in our Cairo atelier.",
+    heroCta:"Shop the collection", heroCta2:"Our story",
+    heroBadgeEm:"Handmade", heroBadgeSub:"Every piece, made to order",
+    trust1t:"Cash on Delivery", trust1s:"Pay when it arrives",
+    trust2t:"Nationwide shipping", trust2s:"All 27 governorates",
+    trust3t:"Handmade quality", trust3s:"Sewn in Cairo",
+    trust4t:"Easy exchange", trust4s:"Within 3 days",
+    catsHead:"Shop by category", catsSub:"Find the perfect piece for her big day",
+    shopEyebrow:"The Collection", shopHead:"Our pieces", shopSub:"Tap any piece to see every colour, front and back, and pick a size",
+    searchPh:"Search dresses...",
+    sortFeatured:"Featured", sortLow:"Price: Low to High", sortHigh:"Price: High to Low",
+    quickAdd:"Quick view", addCart:"Add to cart", orderWa:"Order on WhatsApp",
+    chooseSize:"Choose a size", sizeGuide:"Size guide", fabricCare:"Fabric & care",
+    lookHead:"The Lookbook", lookSub:"Signature pieces from our latest drop",
+    look1:"Sakura · Pink Blossom", look2:"Sakura · Blue Blossom", look3:"Rainbow ribbed tops",
+    aboutEyebrow:"Our Story", aboutHead:"A little atelier with a big heart",
+    aboutP1:"Aylatelier began with one idea: every little girl deserves a dress that feels made just for her. From flamenco ruffles to cherry-blossom tulle, each piece is cut, sewn and finished by hand in our Cairo studio.",
+    aboutP2:"We use soft, skin-friendly fabrics and real handwork, not mass production. Order a size off the rack, or message us for a custom fit.",
+    stat1n:"500+", stat1s:"Happy little clients", stat2n:"100%", stat2s:"Handmade", stat3n:"27", stat3s:"Governorates served",
+    newsHead:"Join the Aylatelier family", newsSub:"New drops, restocks and little offers, straight to your inbox.",
+    newsPh:"Your email address", newsBtn:"Subscribe", newsThanks:"Welcome to the family! 💗",
+    footTagline:"Handcrafted couture for little ones, sewn with love in Cairo.",
+    footShop:"Shop", footHelp:"Help", footContact:"Contact",
+    fSize:"Size guide", fShip:"Shipping & delivery", fReturn:"Exchange policy", fCustom:"Custom orders",
+    contactHead:"Contact", rights:"All rights reserved.",
+    madeNote:"Prototype store · not yet taking live payments",
+    cartTitle:"Your Cart", cartEmpty:"Your cart is empty", cartEmptySub:"Add something pretty ✨",
+    subtotal:"Subtotal", shipping:"Shipping", shipAtCheckout:"Calculated at checkout", total:"Total",
+    checkout:"Checkout", continueShop:"Continue shopping", size:"Size",
+    coContact:"Delivery details", fullName:"Full name", phone:"Phone number",
+    gov:"Governorate", selectGov:"Select governorate", cityArea:"City / Area", address:"Full address",
+    notes:"Notes (optional)", notesPh:"Landmark, floor, delivery time...",
+    payMethod:"Payment method",
+    cod:"Cash on Delivery", codSub:"Pay cash when your order arrives",
+    wallet:"Vodafone Cash / Wallet", walletSub:"Transfer to our mobile wallet",
+    instapay:"InstaPay", instapaySub:"Instant bank transfer",
+    cardDel:"Card on delivery", cardDelSub:"Pay by card at your door",
+    placeOrder:"Place order", orderSummary:"Order summary",
+    reqField:"This field is required", validPhone:"Enter a valid Egyptian phone number",
+    orderPlaced:"Order placed!", orderThanks:"Thank you! We'll confirm your order shortly.",
+    yourOrder:"Your order number", sendWa:"Send order on WhatsApp", keepShopping:"Keep shopping",
+    waHint:"Tap below to send your order straight to us on WhatsApp for the fastest confirmation.",
+    addedToCart:"Added to your cart", freeShip:"Free", pickSizeFirst:"Please choose a size first",
+    egp:"EGP", items:"items", item:"item"
+  },
+  ar:{
+    dir:"rtl",
+    from:"يبدأ من", viewDetails:"شوفي الألوان والتفاصيل", colorsWord:"ألوان", allColors:"كل الألوان", anyColor:"أي لون حسب الطلب",
+    backToShop:"رجوع للمتجر", color:"اللون", otherColor:"لون آخر", otherColorPh:"اكتبي اللون اللي تحبيه…",
+    typeColorFirst:"من فضلكِ اكتبي اللون المطلوب", picturedIn:"الصورة باللون", sameDesign:"نفس التصميم، يُخاط حسب الطلب باللون اللي تختاريه.",
+    noPhoto:"حسب الطلب، بدون صورة حالياً", yearsWord:"بالسنة", yrs:"سنة", byPriceSize:"السعر حسب المقاس",
+    details:"التفاصيل والخامة", allColorsHead:"كل ألوان القطعة", photos:"صور", youMayLike:"قد يعجبكِ أيضاً",
+    front:"أمام", back:"خلف", frontBack:"أمام وخلف",
+    heroCustom:"صمّمي فستانكِ", navCustom:"تفصيل حسب الطلب",
+    customBadge:"خدمتنا المميزة", customEyebrow:"تفصيل حسب الطلب",
+    customTitle:"تصميمكِ. بمقاساتكِ.",
+    customText:"أرسلي لنا صورة أو رسمة أو حتى فكرة مع مقاسات صغيرتكِ، ونخيطه لكِ خصيصاً. أي لون، أي قماش، أي مقاس، مصنوع لها وحدها.",
+    customP1:"يُخاط على مقاساتها بالضبط",
+    customP2:"تصميمكِ وألوانكِ وأقمشتكِ",
+    customP3:"متابعة شخصية من أول رسالة حتى التوصيل",
+    customCta:"ابدئي طلب تفصيل عبر واتساب", customGuide:"دليل المقاسات",
+    announce:'صناعة يدوية في مصر · الدفع عند الاستلام متاح · شحن مجاني للطلبات فوق ٣٠٠٠ ج.م',
+    navShop:"المتجر", navLook:"اللوك بوك", navAbout:"من نحن", navContact:"تواصلي معنا",
+    catAll:"الكل", catDresses:"فساتين", catSets:"أطقم", catCasual:"كاجوال", catTops:"بلوزات",
+    heroEyebrow:"أيلاتيليه · كوتور الصغيرات",
+    heroTitle:"فساتين مصمّمة لأميراتكِ الصغيرة",
+    heroText:"فساتين سواريه وأطقم وقطع يومية للبنات، مصنوعة بحبّ وبأيدينا في أتيليه القاهرة.",
+    heroCta:"تسوّقي المجموعة", heroCta2:"قصتنا",
+    heroBadgeEm:"صناعة يدوية", heroBadgeSub:"كل قطعة تُخاط خصيصاً",
+    trust1t:"الدفع عند الاستلام", trust1s:"ادفعي عند وصول الطلب",
+    trust2t:"شحن لكل المحافظات", trust2s:"جميع الـ٢٧ محافظة",
+    trust3t:"جودة يدوية", trust3s:"خياطة في القاهرة",
+    trust4t:"استبدال سهل", trust4s:"خلال ٣ أيام",
+    catsHead:"تسوّقي حسب الفئة", catsSub:"اختاري القطعة المثالية ليومها المميز",
+    shopEyebrow:"المجموعة", shopHead:"قطعنا", shopSub:"اضغطي على أي قطعة لتشوفي كل ألوانها من الأمام والخلف وتختاري المقاس",
+    searchPh:"ابحثي عن فستان...",
+    sortFeatured:"المميزة", sortLow:"السعر: من الأقل", sortHigh:"السعر: من الأعلى",
+    quickAdd:"عرض سريع", addCart:"أضيفي للحقيبة", orderWa:"اطلبي عبر واتساب",
+    chooseSize:"اختاري المقاس", sizeGuide:"دليل المقاسات", fabricCare:"الخامة والعناية",
+    lookHead:"اللوك بوك", lookSub:"قطع مميزة من أحدث تشكيلة",
+    look1:"ساكورا · زهر وردي", look2:"ساكورا · زهر أزرق", look3:"بلوزات ريب بألوان قوس قزح",
+    aboutEyebrow:"قصتنا", aboutHead:"أتيليه صغير بقلب كبير",
+    aboutP1:"بدأت أيلاتيليه بفكرة واحدة: كل بنت تستحق فستاناً يبدو وكأنه صُنع من أجلها وحدها. من كشكشة الفلامنكو إلى تول زهر الكرز، كل قطعة تُقصّ وتُخاط وتُنهى يدوياً في استوديو القاهرة.",
+    aboutP2:"نستخدم خامات ناعمة ولطيفة على البشرة وشغل يدوي حقيقي، لا إنتاج بالجملة. اطلبي مقاساً جاهزاً، أو راسلينا لمقاس مفصّل.",
+    stat1n:"+٥٠٠", stat1s:"عميلة صغيرة سعيدة", stat2n:"١٠٠٪", stat2s:"صناعة يدوية", stat3n:"٢٧", stat3s:"محافظة نخدمها",
+    newsHead:"انضمي لعائلة أيلاتيليه", newsSub:"وصولات جديدة وعروض صغيرة، تصلكِ مباشرة.",
+    newsPh:"بريدكِ الإلكتروني", newsBtn:"اشتراك", newsThanks:"أهلاً بكِ في العائلة! 💗",
+    footTagline:"كوتور يدوي للصغيرات، مخيط بحبّ في القاهرة.",
+    footShop:"المتجر", footHelp:"مساعدة", footContact:"تواصلي معنا",
+    fSize:"دليل المقاسات", fShip:"الشحن والتوصيل", fReturn:"سياسة الاستبدال", fCustom:"طلبات مفصّلة",
+    contactHead:"تواصلي معنا", rights:"جميع الحقوق محفوظة.",
+    madeNote:"متجر تجريبي · لا يستقبل مدفوعات فعلية بعد",
+    cartTitle:"حقيبتكِ", cartEmpty:"حقيبتكِ فارغة", cartEmptySub:"أضيفي شيئاً جميلاً ✨",
+    subtotal:"الإجمالي الفرعي", shipping:"الشحن", shipAtCheckout:"يُحسب عند الدفع", total:"الإجمالي",
+    checkout:"إتمام الطلب", continueShop:"متابعة التسوق", size:"المقاس",
+    coContact:"بيانات التوصيل", fullName:"الاسم بالكامل", phone:"رقم الهاتف",
+    gov:"المحافظة", selectGov:"اختاري المحافظة", cityArea:"المدينة / المنطقة", address:"العنوان بالتفصيل",
+    notes:"ملاحظات (اختياري)", notesPh:"علامة مميزة، الدور، وقت التوصيل...",
+    payMethod:"طريقة الدفع",
+    cod:"الدفع عند الاستلام", codSub:"ادفعي نقداً عند وصول طلبكِ",
+    wallet:"فودافون كاش / محفظة", walletSub:"تحويل إلى محفظتنا",
+    instapay:"إنستا باي", instapaySub:"تحويل بنكي فوري",
+    cardDel:"دفع بالبطاقة عند الاستلام", cardDelSub:"ادفعي بالبطاقة عند بابكِ",
+    placeOrder:"تأكيد الطلب", orderSummary:"ملخص الطلب",
+    reqField:"هذا الحقل مطلوب", validPhone:"أدخلي رقم هاتف مصري صحيح",
+    orderPlaced:"تم تأكيد الطلب!", orderThanks:"شكراً لكِ! سنؤكد طلبكِ قريباً.",
+    yourOrder:"رقم طلبكِ", sendWa:"أرسلي الطلب عبر واتساب", keepShopping:"متابعة التسوق",
+    waHint:"اضغطي بالأسفل لإرسال طلبكِ مباشرة عبر واتساب لتأكيد أسرع.",
+    addedToCart:"أُضيف إلى حقيبتكِ", freeShip:"مجاني", pickSizeFirst:"من فضلكِ اختاري المقاس أولاً",
+    egp:"ج.م", items:"قطع", item:"قطعة"
+  }
+};
+
+const CAT = {
+  dresses:{en:"Dresses",ar:"فساتين"}, sets:{en:"Sets",ar:"أطقم"},
+  casual:{en:"Casual",ar:"كاجوال"}, tops:{en:"Tops",ar:"بلوزات"}
+};
+
+/* ---------- sizes & pricing ----------
+   Sizes run 2-3 up to 8-9 only. Each size step up adds SIZE_STEP EGP.
+   `price` on a product = the price of the smallest size (2-3). */
+const SIZES = ["2-3","4-5","6-7","8-9"];
+const SIZE_STEP = 100;
+function priceFor(p,size){ const i=SIZES.indexOf(size); return p.price + (i<0?0:i)*SIZE_STEP; }
+function maxPrice(p){ return priceFor(p,SIZES[SIZES.length-1]); }
+
+/* ---------- colour library (name EN / AR + swatch) ---------- */
+const COLORS = {
+  babyblue:{en:"Baby Blue",ar:"بيبي بلو",hex:"#a9c8ec"},
+  pink:{en:"Pink",ar:"بينك",hex:"#f1b3c3"},
+  burgundy:{en:"Burgundy",ar:"برجاندي",hex:"#7a1f2e"},
+  salmon:{en:"Salmon",ar:"سيمون",hex:"#f4a08a"},
+  lightmauve:{en:"Light Mauve",ar:"موف فاتح",hex:"#b99ad8"},
+  darkmauve:{en:"Dark Mauve",ar:"موف غامق",hex:"#7b4f9e"},
+  darkskyblue:{en:"Dark Sky Blue",ar:"لبني غامق",hex:"#5f9bd3"},
+  periwinkle:{en:"Periwinkle",ar:"أزرق زهري",hex:"#8f9be0"},
+  camel:{en:"Camel",ar:"جملي",hex:"#c19a6b"},
+  lightred:{en:"Light Red",ar:"أحمر فاتح",hex:"#e4625f"},
+  mustard:{en:"Mustard",ar:"مسطردة",hex:"#d4a53a"},
+  green:{en:"Green",ar:"أخضر",hex:"#1f6f5c"},
+  emerald:{en:"Emerald",ar:"أخضر زمردي",hex:"#1c5a44"},
+  yellow:{en:"Yellow",ar:"أصفر",hex:"#f2d34f"},
+  gold:{en:"Gold",ar:"دهبي",hex:"#c9a44c"},
+  mauve:{en:"Mauve",ar:"موف",hex:"#b79ad6"},
+  fuchsia:{en:"Fuchsia",ar:"فوشيا",hex:"#b0194f"},
+  navy:{en:"Navy",ar:"كحلي",hex:"#1e2b5e"},
+  purple:{en:"Purple",ar:"بنفسجي",hex:"#6a3fa0"},
+  red:{en:"Red",ar:"أحمر",hex:"#c0202f"},
+  cherry:{en:"Cherry Red",ar:"أحمر كرزي",hex:"#8e1b2c"},
+  ruby:{en:"Ruby",ar:"روبي",hex:"#6e1426"},
+  blue:{en:"Blue",ar:"أزرق",hex:"#6f8fd0"},
+  royal:{en:"Royal Blue",ar:"أزرق ملكي",hex:"#2a4aa0"},
+  lilac:{en:"Lilac",ar:"ليلكي",hex:"#c6b3e6"},
+  violet:{en:"Violet",ar:"بنفسجي فاتح",hex:"#8d6cc4"},
+  mint:{en:"Mint",ar:"منت",hex:"#9fd8c4"},
+  azure:{en:"Azure",ar:"أزرق سماوي",hex:"#1f8fd0"},
+  black:{en:"Black",ar:"أسود",hex:"#1b1b1f"},
+  blackred:{en:"Black & Red",ar:"أسود وأحمر",hex:"linear-gradient(135deg,#1b1b1f 50%,#d22 50%)"},
+  ivory:{en:"Ivory",ar:"أوف وايت",hex:"#efe6d2"},
+  creamyellow:{en:"Cream & Yellow",ar:"كريمي وأصفر",hex:"linear-gradient(135deg,#f6eed6 50%,#f5cf1d 50%)"},
+  sakurapink:{en:"Blossom Pink",ar:"وردي",hex:"#e9b9c6"},
+  sakurablue:{en:"Blossom Blue",ar:"أزرق",hex:"#7d94c7"},
+  plum:{en:"Plum",ar:"برقوقي",hex:"#4a3060"},
+  rose:{en:"Rose",ar:"روز",hex:"#eaa7bd"},
+  scarlet:{en:"Scarlet",ar:"أحمر قاني",hex:"#b0202c"},
+  dustyrose:{en:"Dusty Rose",ar:"بينك مطفي",hex:"#d98aa6"},
+  orange:{en:"Orange",ar:"برتقالي",hex:"#e0773f"}
+};
+
+/* ---------- products ----------
+   colors: [{c:<COLORS key>, img:[image keys]}]  (no img = sewn to order in that colour, gallery shows the pictured colour)
+   image keys ending in _f / _b are shown as Front / Back.
+   anyColor: true  -> adds an "Other colour" option where the customer types the colour.
+   PRICE TBC = placeholder price, owner to confirm. */
+const PRODUCTS = [
+  {id:"stella",cat:"dresses",price:1200 /* PRICE TBC */,badge:"new",
+   colors:[{c:"babyblue",img:["st_blue"]},{c:"pink",img:["st_pink"]},{c:"burgundy",img:["st_burg"]},{c:"salmon"}],
+   en:{name:"Stella Sequin Dress",tag:"New",desc:"A one-shoulder party dress. The skirt is soft tulle filled with gomma (crinoline) padding for full, bouncy volume, and the top is fully hand-embroidered. Comes with its matching accessories.",fabric:["Soft tulle + gomma fill","Hand-embroidered top","Accessories included"]},
+   ar:{name:"فستان ستيلا بالترتر",tag:"جديد",desc:"فستان بناتي بكتف واحد. الاسكيرت من التل الناعم بحشو الجوميه لنفشة كاملة، والتوب مطرّز هاند ميد بالكامل. يأتي مع الإكسسوارات المناسبة له.",fabric:["تل ناعم بحشو الجوميه","توب مطرّز هاند ميد","مع الإكسسوارات"]}},
+
+  {id:"p16",cat:"sets",price:1200,badge:"new",
+   colors:[{c:"lightmauve",img:["bl_lilac_f","bl_lilac_b"]},{c:"mustard",img:["bl_mustard_f","bl_mustard_b"]},{c:"darkmauve"},{c:"darkskyblue"},{c:"periwinkle"},{c:"camel"},{c:"lightred"}],
+   en:{name:"Bloom Outfit",tag:"New",desc:"A two-piece girls' outfit. The skirt is soft pleated (plissé) satin in three tiers, and the top is a classic chiffon blouse with sleeves, dotted with 3D flowers and finished with a line of bows down the back.",fabric:["Soft pleated satin skirt","Classic chiffon blouse","Bow-tie back"]},
+   ar:{name:"أوتفيت بلوم",tag:"جديد",desc:"أوتفيت بناتي من قطعتين. الاسكيرت من الستان البليسيه الناعم بثلاث طبقات، والتوب بلوزة كلاسيك شيفون بكم بزهور بارزة وفيونكات على الظهر.",fabric:["ستان بليسيه ناعم","بلوزة كلاسيك شيفون بكم","فيونكات على الظهر"]}},
+
+  {id:"celeste",cat:"sets",price:1200 /* PRICE TBC */,badge:"new",anyColor:true,
+   colors:[{c:"emerald",img:["sq_green"]},{c:"fuchsia",img:["sq_fuchsia"]},{c:"navy",img:["sq_navy"]},{c:"purple",img:["sq_purple"]}],
+   en:{name:"Celeste Two-Piece Dress",tag:"New",desc:"A two-piece party dress: a full, layered puffy tulle skirt and a fully lined top. Available in any colour, with its matching accessories.",fabric:["Layered puffy tulle","Lined top","Accessories included"]},
+   ar:{name:"فستان سيليست منفصل",tag:"جديد",desc:"فستان بناتي منفصل من قطعتين: اسكيرت تل منفوش طبقات، والتوب خامة بايت مبطّنة. متاح بجميع الألوان ومعاه الإكسسوارات الملائمة له.",fabric:["تل منفوش طبقات","توب بايت مبطّن","مع الإكسسوارات"]}},
+
+  {id:"fleur",cat:"sets",price:950 /* PRICE TBC */,badge:"new",
+   colors:[{c:"pink",img:["ts_pink"]},{c:"yellow",img:["ts_yellow"]},{c:"red",img:["ts_red"]},{c:"babyblue",img:["ts_blue"]},{c:"lilac",img:["ts_lilac","ts_lilac_fb","ts_lilac2"]},{c:"violet",img:["ts_violet"]}],
+   en:{name:"Fleur Tulle Set",tag:"New",desc:"A soft ribbed white top with puff sleeves, paired with a printed tulle midi skirt and a satin bow at the waist. Styled with a matching hair bow, necklace and shoes.",fabric:["Ribbed knit top","Printed tulle skirt","Two pieces"]},
+   ar:{name:"طقم فلور تول",tag:"جديد",desc:"بلوزة بيضاء ريب ناعمة بأكمام منفوخة مع اسكيرت تل مطبوع بطول ميدي وفيونكة ساتان عند الخصر. منسّق مع توكة وسلسلة وحذاء بنفس اللون.",fabric:["بلوزة ريب","اسكيرت تل مطبوع","قطعتان"]}},
+
+  {id:"p4",cat:"dresses",price:850,badge:"",
+   colors:[{c:"green",img:["p4"]},{c:"yellow"},{c:"gold"},{c:"babyblue"},{c:"pink"},{c:"mauve"},{c:"salmon"}],
+   en:{name:"Emerald Petal Dress",tag:"",desc:"A two-piece dress. The skirt pairs patterned tulle with plain tulle, and the top is satin with guipure lace. Comes with its matching accessories.",fabric:["Patterned + plain tulle","Satin top with guipure","Accessories included"]},
+   ar:{name:"فستان إميرالد بيتال",tag:"",desc:"فستان بناتي قطعتين. الاسكيرت من التل المنقوش مع التل السادة، والتوب من الستان مع الجبير. مع الإكسسوارات الملائمة له.",fabric:["تل منقوش وتل سادة","توب ستان مع جبير","مع الإكسسوارات"]}},
+
+  {id:"p13",cat:"dresses",price:800,badge:"sig",
+   colors:[{c:"sakurapink",img:["sk_pink","sk_pink_r"]},{c:"sakurablue",img:["sk_blue","sk_blue_r"]}],
+   en:{name:"Sakura Blossom Dress",tag:"Signature",desc:"3D cherry-blossom appliqué scattered over shimmer tulle, with a tiered hem. Our signature piece, in pink or blue.",fabric:["Shimmer tulle","3D floral appliqué","Cotton lining"]},
+   ar:{name:"فستان ساكورا بلوسم",tag:"القطعة المميزة",desc:"زهور كرز ثلاثية الأبعاد مبعثرة على تول لامع، بذيل متدرّج. قطعتنا الأشهر، بالوردي أو الأزرق.",fabric:["تول لامع","زهور ثلاثية الأبعاد","بطانة قطن"]}},
+
+  {id:"p7",cat:"sets",price:1100,badge:"best",anyColor:true,
+   colors:[{c:"blue",img:["p7"]}],
+   en:{name:"Sapphire Velvet Set",tag:"Bestseller",desc:"A two-piece: the dress is tulle embellished with raised 3D flowers over a layer of plain tulle, topped with a soft velvet jacket. Available in any colour.",fabric:["Tulle with 3D flowers","Plain tulle layer","Soft velvet jacket"]},
+   ar:{name:"طقم سافير القطيفة",tag:"الأكثر مبيعاً",desc:"فستان بناتي قطعتين. الفستان من التل المطعّم بوردات بارزة مع طبقة من التل السادة، والجاكيت قطيفة ناعم. متاح بجميع الألوان.",fabric:["تل مطعّم بوردات بارزة","طبقة تل سادة","جاكيت قطيفة ناعم"]}},
+
+  {id:"p5",cat:"dresses",price:850,badge:"",anyColor:true,
+   colors:[{c:"blue",img:["p5","p5r"]},{c:"lilac",img:["p5r"]},{c:"pink",img:["p5r"]},{c:"yellow",img:["p5r"]},{c:"mint",img:["p5r"]}],
+   en:{name:"Bluebell Flower Dress",tag:"",desc:"Tulle embellished with raised 3D flowers over a layer of plain tulle, with its matching accessories. Available in any colour.",fabric:["Tulle with 3D flowers","Plain tulle layer","Accessories included"]},
+   ar:{name:"فستان بلوبيل بالورد",tag:"",desc:"فستان بناتي من التل المطعّم بوردات بارزة مع طبقة من التل السادة، مع الإكسسوارات الملائمة له. متاح بجميع الألوان.",fabric:["تل مطعّم بوردات بارزة","طبقة تل سادة","مع الإكسسوارات"]}},
+
+  {id:"p3",cat:"dresses",price:850,badge:"",
+   colors:[{c:"red",img:["p3"]}],
+   en:{name:"Rosa Bloom Dress",tag:"",desc:"The skirt is full, puffy plain tulle and the top is printed disco fabric. Available in red.",fabric:["Puffy plain tulle","Printed disco top"]},
+   ar:{name:"فستان روزا بلوم",tag:"",desc:"فستان بناتي. الاسكيرت من التل السادة المنفوش، والتوب من الديسكو المطبوع. متاح باللون الأحمر.",fabric:["تل سادة منفوش","توب ديسكو مطبوع"]}},
+
+  {id:"azure",cat:"sets",price:950 /* PRICE TBC */,badge:"new",
+   colors:[{c:"azure",img:["az_f","az_b"]}],
+   en:{name:"Azure Pleated Set",tag:"New",desc:"A white ribbed puff-sleeve top with little bow cuffs and a keyhole back, over a three-tier pleated skirt with a big bow.",fabric:["Ribbed knit top","Pleated tiers","Two pieces"]},
+   ar:{name:"طقم أزور بليسيه",tag:"جديد",desc:"بلوزة بيضاء ريب بأكمام منفوخة وفيونكات صغيرة عند الكم وفتحة زرار من الخلف، مع اسكيرت بليسيه بثلاث طبقات وفيونكة كبيرة.",fabric:["بلوزة ريب","اسكيرت بليسيه طبقات","قطعتان"]}},
+
+  {id:"ivory",cat:"dresses",price:1200 /* PRICE TBC */,badge:"new",
+   colors:[{c:"ivory",img:["iv_f","iv_b"]}],
+   en:{name:"Ivory Pearl Dress",tag:"New",desc:"An ivory satin bodice with flutter sleeves and a pearl-flower strap, over a full tulle skirt with tonal floral appliqué and a big satin bow at the back. Styled with a matching headband, shoes and bag.",fabric:["Satin bodice","Floral tulle skirt","Back bow"]},
+   ar:{name:"فستان آيفوري بيرل",tag:"جديد",desc:"صدر ساتان أوف وايت بأكمام كشكشة وحمّالة بورود ولؤلؤ، مع تنورة تل واسعة بورود بنفس اللون وفيونكة ساتان كبيرة على الظهر. منسّق مع طوق شعر وحذاء وشنطة.",fabric:["صدر ساتان","تنورة تل بالورود","فيونكة خلفية"]}},
+
+  {id:"midnight",cat:"dresses",price:950 /* PRICE TBC */,badge:"new",
+   colors:[{c:"black",img:["bk_f","bk_b"]}],
+   en:{name:"Midnight Blossom Dress",tag:"New",desc:"Black tulle embroidered with pink blossoms, flutter sleeves, a satin waist bow and a soft uneven layered hem.",fabric:["Embroidered tulle","Flutter sleeves","Satin sash"]},
+   ar:{name:"فستان ميدنايت بلوسم",tag:"جديد",desc:"تل أسود مطرّز بورود وردي، أكمام كشكشة، فيونكة ساتان عند الخصر وذيل بطبقات غير متساوية.",fabric:["تل مطرّز","أكمام كشكشة","حزام ساتان"]}},
+
+  {id:"daffodil",cat:"dresses",price:950 /* PRICE TBC */,badge:"new",
+   colors:[{c:"creamyellow",img:["cf_f","cf_b"]}],
+   en:{name:"Daffodil Dress",tag:"New",desc:"A cream tulle ballerina skirt with a bright yellow satin bodice, a big 3D flower at the front and a matching bow at the back, finished with pearl beading.",fabric:["Satin bodice","Full tulle skirt","Pearl beading"]},
+   ar:{name:"فستان دافوديل",tag:"جديد",desc:"تنورة تل كريمي منفوشة مع صدر ساتان أصفر، وردة كبيرة بارزة من الأمام وفيونكة من الخلف، مزيّنة باللؤلؤ.",fabric:["صدر ساتان","تنورة تل منفوشة","تطريز لؤلؤ"]}},
+
+  {id:"sunbeam",cat:"dresses",price:950 /* PRICE TBC */,badge:"new",
+   colors:[{c:"yellow",img:["ys_f","ys_b"]}],
+   en:{name:"Sunbeam Dress",tag:"New",desc:"A one-shoulder shimmer dress with a sparkling rhinestone belt and three tiers of soft tulle.",fabric:["Shimmer bodice","Rhinestone belt","Tiered tulle"]},
+   ar:{name:"فستان صن بيم",tag:"جديد",desc:"فستان لامع بكتف واحد مع حزام ستراس لامع وثلاث طبقات من التل الناعم.",fabric:["صدر لامع","حزام ستراس","تل طبقات"]}},
+
+  {id:"p2",cat:"dresses",price:1200,badge:"",
+   colors:[{c:"cherry",img:["p2"]}],
+   en:{name:"Cerise Sequin Gown",tag:"",desc:"Sequin bodice and a tiered tulle skirt, finished with a floral sash. Matching flower headband included.",fabric:["Sequin bodice","Layered tulle","Headband included"]},
+   ar:{name:"فستان سيريز بالترتر",tag:"",desc:"صدر مطرّز بالترتر وتنورة تول متدرّجة، مع حزام مزيّن بالورد. يشمل طوق شعر منسّق.",fabric:["صدر ترتر","تول متعدد الطبقات","طوق شعر مرفق"]}},
+
+  {id:"ruby",cat:"dresses",price:1200 /* PRICE TBC */,badge:"new",
+   colors:[{c:"ruby",img:["ruby"]}],
+   en:{name:"Ruby Tiered Dress",tag:"New",desc:"A high-neck sequin bodice over four tiers of ruffled tulle in deep ruby.",fabric:["Sequin bodice","Four tulle tiers"]},
+   ar:{name:"فستان روبي",tag:"جديد",desc:"صدر ترتر برقبة عالية مع أربع طبقات من التل المكشكش بلون الروبي الغامق.",fabric:["صدر ترتر","أربع طبقات تل"]}},
+
+  {id:"p1",cat:"sets",price:850,badge:"best",
+   colors:[{c:"blackred",img:["p1"]}],
+   en:{name:"Carmen Flamenco Set",tag:"Bestseller",desc:"A two-piece satin set with layered black-and-red ruffles and a beaded bow. Made for a show-stopping entrance.",fabric:["Satin","Two pieces","Tulle underlayer"]},
+   ar:{name:"طقم كارمن فلامنكو",tag:"الأكثر مبيعاً",desc:"طقم من قطعتين ساتان بكشكشة سوداء وحمراء متدرّجة وفيونكة باللؤلؤ. لإطلالة تخطف الأنظار.",fabric:["ساتان","قطعتان","طبقة تول سفلية"]}},
+
+  {id:"p6",cat:"dresses",price:999,badge:"",
+   colors:[{c:"purple",img:["p6","p6b"]}],
+   en:{name:"Violet Starlight",tag:"",desc:"One-shoulder sequin bodice with a soft purple tulle skirt and a satin bow. Party-perfect.",fabric:["Sequin bodice","Tulle skirt","Satin bow"]},
+   ar:{name:"فستان فيوليت ستارلايت",tag:"",desc:"صدر ترتر بكتف واحد مع تنورة تول بنفسجية ناعمة وفيونكة ساتان. مثالي للحفلات.",fabric:["صدر ترتر","تنورة تول","فيونكة ساتان"]}},
+
+  {id:"p12",cat:"dresses",price:1200,badge:"",
+   colors:[{c:"purple",img:["p12"]}],
+   en:{name:"Amethyst Sparkle",tag:"",desc:"A sequin bodice with a center bow and a full tulle skirt in deep amethyst. Twirl-approved.",fabric:["Sequin bodice","Full tulle skirt","Satin bow"]},
+   ar:{name:"فستان أميثيست",tag:"",desc:"صدر ترتر بفيونكة في المنتصف وتنورة تول واسعة باللون البنفسجي الغامق. مثالي للف والرقص.",fabric:["صدر ترتر","تنورة تول واسعة","فيونكة ساتان"]}},
+
+  {id:"p11",cat:"sets",price:750,badge:"",
+   colors:[{c:"plum",img:["p11"]}],
+   en:{name:"Plum Velvet Set",tag:"",desc:"A velvet top with a big bow and a matching tulle skirt. Cozy, soft and party-ready.",fabric:["Velvet top","Tulle skirt","Two pieces"]},
+   ar:{name:"طقم بلوم المخمل",tag:"",desc:"بلوزة مخمل بفيونكة كبيرة وتنورة تول منسّقة. ناعمة ودافئة وجاهزة للحفلات.",fabric:["بلوزة مخمل","تنورة تول","قطعتان"]}},
+
+  {id:"p9",cat:"dresses",price:1100,badge:"",
+   colors:[{c:"rose",img:["p9"]}],
+   en:{name:"Coquette Bow Dress",tag:"",desc:"A ruched-bodice sundress with satin bow straps and little bows scattered across the skirt.",fabric:["Textured cotton blend","Satin bows","Full skirt"]},
+   ar:{name:"فستان كوكيت بالفيونكات",tag:"",desc:"فستان صيفي بصدر مكسّم وحمالات بفيونكات ساتان وفيونكات صغيرة على التنورة.",fabric:["قطن مخلوط","فيونكات ساتان","تنورة واسعة"]}},
+
+  {id:"p8",cat:"casual",price:450,badge:"",
+   colors:[{c:"scarlet",img:["p8"]}],
+   en:{name:"Scarlet Linen Dress",tag:"",desc:"A textured long-sleeve dress with wooden buttons and puff sleeves. Everyday elegance.",fabric:["Textured linen-blend","Wooden buttons","Puff sleeves"]},
+   ar:{name:"فستان سكارليت كتان",tag:"",desc:"فستان بأكمام طويلة وقماش منسوج بأزرار خشبية وأكمام منفوخة. أناقة يومية.",fabric:["كتان منسوج","أزرار خشبية","أكمام منفوخة"]}},
+
+  {id:"p10",cat:"tops",price:300,badge:"",
+   colors:[{c:"dustyrose",img:["p10"]}],
+   en:{name:"Rosé Bow Blouse",tag:"",desc:"A ribbed puff-sleeve blouse finished with a soft tulle-and-pearl bow at the neck.",fabric:["Ribbed knit","Puff sleeves","Tulle bow"]},
+   ar:{name:"بلوزة روزيه بالفيونكة",tag:"",desc:"بلوزة ريب بأكمام منفوخة وفيونكة تول ولؤلؤ ناعمة عند الرقبة.",fabric:["تريكو ريب","أكمام منفوخة","فيونكة تول"]}},
+
+  {id:"p15",cat:"tops",price:300,badge:"",anyColor:true,
+   colors:[{c:"orange",img:["p15","banner3"]}],
+   en:{name:"Rainbow Ribbed Top",tag:"8 colors",desc:"A soft ribbed tank with tulle ruffle sleeves and a heart bow. Available in 8 colours: pick “Other colour” and tell us yours.",fabric:["Ribbed knit","Tulle ruffle sleeves","8 colours"]},
+   ar:{name:"بلوزة ريب ملوّنة",tag:"٨ ألوان",desc:"بلوزة ريب ناعمة بأكمام كشكشة تول وفيونكة قلب. متوفرة بـ٨ ألوان: اختاري «لون آخر» واكتبي اللون.",fabric:["تريكو ريب","أكمام تول","٨ ألوان"]}}
+];
+
+/* ---------- product helpers ---------- */
+function colorsOf(p){ return p.colors||[]; }
+function colorInfo(key){ return COLORS[key]||{en:key,ar:key,hex:"#ddd"}; }
+function colorName(key){
+  if(!key) return "";
+  if(key.startsWith("other:")) return key.slice(6);
+  return colorInfo(key)[lang];
+}
+function defaultColor(p){ return colorsOf(p).find(c=>c.img&&c.img.length)||colorsOf(p)[0]; }
+function coverKey(p){ const d=defaultColor(p); return d&&d.img?d.img[0]:"logo"; }
+function imgsFor(p,ckey){
+  const c=colorsOf(p).find(x=>x.c===ckey);
+  if(c&&c.img&&c.img.length) return {imgs:c.img,pictured:true};
+  const d=defaultColor(p); return {imgs:d&&d.img?d.img:[coverKey(p)],pictured:false,shown:d?d.c:null};
+}
+function IMG(k){ return "img/"+k+".jpg"; }
+function TH(k){ return "img/t/"+k+".jpg"; }
+function viewLabel(k){ return /_fb$/.test(k)?t('frontBack'):/_f$/.test(k)?t('front'):/_b$/.test(k)?t('back'):""; }
+
+const GOV = [
+  {en:"Cairo",ar:"القاهرة",fee:60},{en:"Giza",ar:"الجيزة",fee:60},{en:"Qalyubia",ar:"القليوبية",fee:60},
+  {en:"Alexandria",ar:"الإسكندرية",fee:75},{en:"Dakahlia",ar:"الدقهلية",fee:75},{en:"Sharqia",ar:"الشرقية",fee:75},
+  {en:"Gharbia",ar:"الغربية",fee:75},{en:"Monufia",ar:"المنوفية",fee:75},{en:"Beheira",ar:"البحيرة",fee:75},
+  {en:"Kafr El Sheikh",ar:"كفر الشيخ",fee:75},{en:"Damietta",ar:"دمياط",fee:75},
+  {en:"Port Said",ar:"بورسعيد",fee:80},{en:"Ismailia",ar:"الإسماعيلية",fee:80},{en:"Suez",ar:"السويس",fee:80},
+  {en:"Faiyum",ar:"الفيوم",fee:90},{en:"Beni Suef",ar:"بني سويف",fee:90},{en:"Minya",ar:"المنيا",fee:90},
+  {en:"Asyut",ar:"أسيوط",fee:90},{en:"Sohag",ar:"سوهاج",fee:95},{en:"Qena",ar:"قنا",fee:95},
+  {en:"Luxor",ar:"الأقصر",fee:100},{en:"Aswan",ar:"أسوان",fee:100},
+  {en:"Red Sea",ar:"البحر الأحمر",fee:120},{en:"New Valley",ar:"الوادي الجديد",fee:130},
+  {en:"Matrouh",ar:"مطروح",fee:120},{en:"North Sinai",ar:"شمال سيناء",fee:130},{en:"South Sinai",ar:"جنوب سيناء",fee:130}
+];
+
+/* ---------- state ---------- */
+let lang = "ar";
+let cart = [];
+let curFilter = "all", curSort = "featured", curSearch = "";
+let pdCurrent = null, pdSize = null, coPayment = "cod";
+
+try{ const s=localStorage.getItem("ayla_lang"); if(s) lang=s; }catch(e){}
+try{ const c=localStorage.getItem("ayla_cart"); if(c) cart=JSON.parse(c)||[]; }catch(e){}
+/* migrate carts saved before v3: merged products + sizes now stop at 8-9 */
+const LEGACY={p14:["p13","sakurablue"],p17:["p16","mustard"]};
+try{
+  cart=(Array.isArray(cart)?cart:[]).map(i=>{ if(LEGACY[i.id]){ const [nid,col]=LEGACY[i.id]; return {...i,id:nid,color:col}; } return {...i,color:i.color||""}; })
+    .filter(i=>prod(i.id)&&SIZES.includes(i.size)&&i.qty>0);
+}catch(e){ cart=[]; }
+
+function save(){ try{localStorage.setItem("ayla_cart",JSON.stringify(cart));localStorage.setItem("ayla_lang",lang);}catch(e){} }
+function t(k){ return STR[lang][k] ?? k; }
+function P(p){ return p[lang]; }
+function money(n){
+  const s = Number(n).toLocaleString('en-US');
+  return lang==="ar" ? `${s} ${t('egp')}` : `${t('egp')} ${s}`;
+}
+function prod(id){ return PRODUCTS.find(p=>p.id===id); }
+
+/* ---------- render app shell ---------- */
+function renderApp(){
+  const app = document.getElementById("app");
+  app.innerHTML = `
+  <div class="announce" data-i18n="announce">${t('announce')}</div>
+  <header class="site"><div class="wrap"><div class="nav">
+    <button class="icon-btn hamb" onclick="openMenu()" aria-label="menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    <a class="brand" onclick="goto('top')" style="cursor:pointer">
+      <img src="${IMAGES.logo}" alt="Aylatelier">
+    </a>
+    <nav class="links">
+      <a onclick="goto('shop','all')">${t('navShop')}</a>
+      <a onclick="goto('shop','dresses')">${CAT.dresses[lang]}</a>
+      <a onclick="goto('shop','sets')">${CAT.sets[lang]}</a>
+      <a onclick="goto('shop','tops')">${CAT.tops[lang]}</a>
+      <a class="nav-custom" onclick="goto('custom')">${t('navCustom')}</a>
+      <a onclick="goto('lookbook')">${t('navLook')}</a>
+      <a onclick="goto('about')">${t('navAbout')}</a>
+      <a onclick="goto('contact')">${t('navContact')}</a>
+    </nav>
+    <div class="tools">
+      <button class="lang-toggle" onclick="toggleLang()">${lang==="ar"?"EN":"العربية"}</button>
+      <button class="icon-btn" onclick="openCart()" aria-label="cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </div></div></header>
+
+  <section class="hero" id="top" style="padding:0"><div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow">${t('heroEyebrow')}</span>
+      <h1>${t('heroTitle')}</h1>
+      <p>${t('heroText')}</p>
+      <div class="hero-cta">
+        <button class="btn" onclick="goto('shop','all')">${t('heroCta')}</button>
+        <button class="btn alt" onclick="goto('custom')">${t('heroCustom')}</button>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img src="${IMAGES.banner1}" alt="">
+      <div class="hero-badge"><span class="em">${t('heroBadgeEm')}</span><small>${t('heroBadgeSub')}</small></div>
+    </div>
+  </div></section>
+
+  <section class="custom" id="custom"><div class="wrap custom-inner">
+    <div class="custom-copy">
+      <span class="custom-badge">✦ ${t('customBadge')}</span>
+      <span class="eyebrow" style="display:block;margin-bottom:8px">${t('customEyebrow')}</span>
+      <h2>${t('customTitle')}</h2>
+      <p class="lead">${t('customText')}</p>
+      <div class="custom-points">
+        <div><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M20 6 9 17l-5-5"/></svg></span>${t('customP1')}</div>
+        <div><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M20 6 9 17l-5-5"/></svg></span>${t('customP2')}</div>
+        <div><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M20 6 9 17l-5-5"/></svg></span>${t('customP3')}</div>
+      </div>
+      <div class="custom-cta">
+        <a class="btn wa" href="https://wa.me/${STORE.whatsapp}?text=${encodeURIComponent(lang==='ar'?'مرحباً أيلاتيليه 💗 أريد طلب فستان تفصيل حسب الطلب (تصميم أو مقاسات خاصة)':'Hi Aylatelier 💗 I would like to place a custom order (my own design / measurements)')}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2z"/></svg>${t('customCta')}</a>
+        <button class="btn alt" onclick="openSize()">${t('customGuide')}</button>
+      </div>
+    </div>
+    <div class="custom-media">
+      <img src="${IMAGES.custom1}" alt="">
+      <span class="tagpill">✦ ${t('customBadge')}</span>
+    </div>
+  </div></section>
+
+  <div class="trust"><div class="wrap">
+    ${trustItem('cod','trust1t','trust1s')}
+    ${trustItem('ship','trust2t','trust2s')}
+    ${trustItem('hand','trust3t','trust3s')}
+    ${trustItem('swap','trust4t','trust4s')}
+  </div></div>
+
+  <section><div class="wrap">
+    <div class="sec-head"><span class="eyebrow">${t('catsHead')}</span><h2>${t('catsHead')}</h2><p>${t('catsSub')}</p></div>
+    <div class="cats">
+      <div class="cat" onclick="goto('shop','dresses')"><img src="${TH('p2')}" alt=""><div class="lab"><b>${CAT.dresses[lang]}</b><span>${PRODUCTS.filter(p=>p.cat==='dresses').length} ${lang==='ar'?'قطعة':'pieces'}</span></div></div>
+      <div class="cat" onclick="goto('shop','sets')"><img src="${TH('bl_lilac_f')}" alt=""><div class="lab"><b>${CAT.sets[lang]}</b><span>${PRODUCTS.filter(p=>p.cat==='sets').length} ${lang==='ar'?'قطعة':'pieces'}</span></div></div>
+      <div class="cat" onclick="goto('shop','tops')"><img src="${TH('p15')}" alt=""><div class="lab"><b>${CAT.tops[lang]}</b><span>${PRODUCTS.filter(p=>p.cat==='tops').length} ${lang==='ar'?'قطعة':'pieces'}</span></div></div>
+      <div class="cat" onclick="goto('shop','casual')"><img src="${TH('p8')}" alt=""><div class="lab"><b>${CAT.casual[lang]}</b><span>${lang==='ar'?'كل يوم':'Everyday'}</span></div></div>
+    </div>
+  </div></section>
+
+  <section id="shop" style="padding-top:20px"><div class="wrap">
+    <div class="sec-head"><span class="eyebrow">${t('shopEyebrow')}</span><h2>${t('shopHead')}</h2><p>${t('shopSub')}</p></div>
+    <div class="toolbar">
+      <div class="filters" id="filters"></div>
+      <div class="toolbar-right">
+        <div class="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input id="searchInput" placeholder="${t('searchPh')}" oninput="onSearch(this.value)" value="${curSearch}">
+        </div>
+        <select class="sort" id="sortSel" onchange="onSort(this.value)">
+          <option value="featured">${t('sortFeatured')}</option>
+          <option value="low">${t('sortLow')}</option>
+          <option value="high">${t('sortHigh')}</option>
+        </select>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div></section>
+
+  <section class="lookbook" id="lookbook"><div class="wrap">
+    <div class="sec-head"><span class="eyebrow">${t('lookHead')}</span><h2>${t('lookHead')}</h2><p>${t('lookSub')}</p></div>
+    <div class="look-grid">
+      <div class="look" onclick="openProduct('p13','sakurapink')"><img src="${IMAGES.banner1}" alt=""><div class="cap">${t('look1')}</div></div>
+      <div class="look" onclick="openProduct('p13','sakurablue')"><img src="${IMAGES.banner2}" alt=""><div class="cap">${t('look2')}</div></div>
+      <div class="look" onclick="openProduct('p15')"><img src="${IMAGES.banner3}" alt=""><div class="cap">${t('look3')}</div></div>
+    </div>
+  </div></section>
+
+  <section class="about" id="about"><div class="wrap">
+    <div class="about-media"><img src="${IMG('p3')}" alt=""></div>
+    <div>
+      <span class="eyebrow">${t('aboutEyebrow')}</span>
+      <h2>${t('aboutHead')}</h2>
+      <p>${t('aboutP1')}</p>
+      <p>${t('aboutP2')}</p>
+      <div class="stats">
+        <div><div class="n">${t('stat1n')}</div><small>${t('stat1s')}</small></div>
+        <div><div class="n">${t('stat2n')}</div><small>${t('stat2s')}</small></div>
+        <div><div class="n">${t('stat3n')}</div><small>${t('stat3s')}</small></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="news" id="contact"><div class="wrap">
+    <h2>${t('newsHead')}</h2>
+    <p>${t('newsSub')}</p>
+    <form onsubmit="subscribe(event)">
+      <input type="email" placeholder="${t('newsPh')}" required>
+      <button class="btn" type="submit">${t('newsBtn')}</button>
+    </form>
+  </div></section>
+
+  <footer class="site"><div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="bt">Aylatelier</div>
+        <p>${t('footTagline')}</p>
+        <div class="socials">
+          <a href="https://instagram.com/${STORE.instagram}" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://wa.me/${STORE.whatsapp}" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2m0 1.8a8.2 8.2 0 0 1 6.9 12.6l-.3.5.8 2.9-3-.8-.4.2A8.2 8.2 0 1 1 12 3.8m-3 3.9c-.2 0-.5 0-.7.4-.2.4-.9.9-.9 2.2s.9 2.5 1 2.7c.2.2 1.8 3 4.5 4 2.2.9 2.7.7 3.2.7.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3-.3-.2-1.5-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.6.9-.8 1-.1.2-.3.2-.5.1-.3-.1-1.1-.4-2-1.3-.8-.7-1.3-1.5-1.4-1.8-.2-.2 0-.4.1-.5l.4-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.5z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>${t('footShop')}</h4>
+        <a onclick="goto('shop','dresses')">${CAT.dresses[lang]}</a>
+        <a onclick="goto('shop','sets')">${CAT.sets[lang]}</a>
+        <a onclick="goto('shop','tops')">${CAT.tops[lang]}</a>
+        <a onclick="goto('shop','casual')">${CAT.casual[lang]}</a>
+      </div>
+      <div>
+        <h4>${t('footHelp')}</h4>
+        <a onclick="openSize()">${t('fSize')}</a>
+        <a onclick="goto('contact')">${t('fShip')}</a>
+        <a onclick="goto('contact')">${t('fReturn')}</a>
+        <a href="https://wa.me/${STORE.whatsapp}" target="_blank" rel="noopener">${t('fCustom')}</a>
+      </div>
+      <div>
+        <h4>${t('footContact')}</h4>
+        <p>${lang==='ar'?STORE.city_ar:STORE.city_en}</p>
+        <a href="https://wa.me/${STORE.whatsapp}" target="_blank" rel="noopener" dir="ltr">+${STORE.whatsapp}</a>
+        <a href="mailto:${STORE.email}" dir="ltr">${STORE.email}</a>
+        <div class="pay"><span>Cash on Delivery</span><span>Vodafone Cash</span><span>InstaPay</span></div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© ${new Date().getFullYear()} Aylatelier. ${t('rights')}</span>
+      <span>${t('madeNote')}</span>
+    </div>
+  </div></footer>`;
+
+  renderFilters();
+  renderProducts();
+  updateCartCount();
+  const ss=document.getElementById('sortSel'); if(ss) ss.value=curSort;
+}
+
+function trustItem(ic,tk,sk){
+  const icons={
+    cod:'<path d="M2 7h20v10H2z"/><circle cx="12" cy="12" r="2.5"/><path d="M6 10v4M18 10v4"/>',
+    ship:'<path d="M3 7h11v8H3zM14 10h4l3 3v2h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17.5" cy="18" r="1.6"/>',
+    hand:'<path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 21.6 7.1 18.2 8 12.7l-4-3.9L9.5 8z"/>',
+    swap:'<path d="M3 8h13l-3-3M21 16H8l3 3"/>'
+  };
+  return `<div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">${icons[ic]}</svg><div><b>${t(tk)}</b><small>${t(sk)}</small></div></div>`;
+}
+
+function renderFilters(){
+  const cats=["all","dresses","sets","tops","casual"];
+  document.getElementById("filters").innerHTML = cats.map(c=>{
+    const label = c==="all"?t('catAll'):CAT[c][lang];
+    return `<button class="chip ${curFilter===c?'active':''}" onclick="onFilter('${c}')">${label}</button>`;
+  }).join("");
+}
+
+/* ---------- filters/sort/search ---------- */
+function onFilter(c){ curFilter=c; renderFilters(); renderProducts(); }
+function onSort(v){ curSort=v; renderProducts(); }
+function onSearch(v){ curSearch=v; renderProducts(); }
+
+/* ---------- language ---------- */
+function applyLang(){
+  document.documentElement.lang = lang;
+  document.documentElement.dir = STR[lang].dir;
+  document.body.classList.toggle("ar", lang==="ar");
+  applyStaticI18n();
+}
+function applyStaticI18n(){
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const k=el.getAttribute('data-i18n');
+    if(STR[lang][k]!=null) el.textContent=STR[lang][k];
+  });
+}
+function toggleLang(){ lang = lang==="ar"?"en":"ar"; applyLang(); save(); renderApp(); if(document.body.classList.contains("pd-open")) renderProductPage(); renderCart(); }
+
+/* ---------- navigation ---------- */
+function goto(where, filter){
+  closeMenu();
+  if(document.body.classList.contains("pd-open")){ try{ history.replaceState(null,"",location.pathname+location.search); }catch(e){} hideProductPage(); }
+  if(where==="shop" && filter){ curFilter=filter; renderFilters(); renderProducts(); }
+  const map={top:"top",shop:"shop",custom:"custom",lookbook:"lookbook",about:"about",contact:"contact"};
+  const el=document.getElementById(map[where]||"top");
+  if(el) el.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+function badgeHtml(p){
+  const info=P(p);
+  return p.badge==="best"?`<span class="badge">${info.tag}</span>`
+    : p.badge==="new"?`<span class="badge new">${info.tag}</span>`
+    : p.badge==="sig"?`<span class="badge sig">${info.tag}</span>`:"";
+}
+function dotsHtml(p,max){
+  const cs=colorsOf(p); max=max||6;
+  let h=cs.slice(0,max).map(c=>`<span class="dot" style="background:${colorInfo(c.c).hex}" title="${colorName(c.c)}"></span>`).join("");
+  if(cs.length>max) h+=`<span class="dot-more">+${cs.length-max}</span>`;
+  if(p.anyColor) h+=`<span class="dot-any" title="${t('anyColor')}">+</span>`;
+  return h;
+}
+function fromPrice(p){ return `<span class="from">${t('from')}</span> ${money(p.price)}`; }
+function cardHtml(p){
+  const info=P(p), n=colorsOf(p).length;
+  const colorsTxt = p.anyColor ? t('allColors') : (n>1 ? `${n} ${t('colorsWord')}` : "");
+  return `<a class="card" href="#p-${p.id}" onclick="pdFromApp=true">
+      <div class="ph">
+        <img src="${TH(coverKey(p))}" alt="${info.name}" loading="lazy">
+        ${badgeHtml(p)}
+        <div class="quick">${t('viewDetails')}</div>
+      </div>
+      <div class="info">
+        <div class="cat-tag">${CAT[p.cat][lang]}</div>
+        <h3>${info.name}</h3>
+        <div class="price">${fromPrice(p)}</div>
+        <div class="dots">${dotsHtml(p)}${colorsTxt?`<span class="ctxt">${colorsTxt}</span>`:""}</div>
+      </div>
+    </a>`;
+}
+function renderProducts(){
+  let list = PRODUCTS.filter(p=>curFilter==="all"||p.cat===curFilter);
+  if(curSearch.trim()){
+    const q=curSearch.trim().toLowerCase();
+    list=list.filter(p=>(p.en.name+" "+p.ar.name+" "+colorsOf(p).map(c=>colorInfo(c.c).en+" "+colorInfo(c.c).ar).join(" ")).toLowerCase().includes(q));
+  }
+  if(curSort==="low") list=[...list].sort((a,b)=>a.price-b.price);
+  if(curSort==="high") list=[...list].sort((a,b)=>b.price-a.price);
+  const grid=document.getElementById("grid");
+  if(!list.length){ grid.innerHTML=`<p class="muted" style="grid-column:1/-1;text-align:center;padding:40px">${lang==='ar'?'لا توجد نتائج':'No results'}</p>`; return; }
+  grid.innerHTML = list.map(cardHtml).join("");
+}
+
+/* ---------- product page (own full page, own link: #p-<id>-<colour>) ---------- */
+let pdFromApp=false, pdColor=null, pdOther="", pdQty=1, pdImgs=[], pdIdx=0;
+function pHash(id,color){ return "#p-"+id+(color&&color!=="other"?"-"+color:""); }
+function openProduct(id,color){ pdFromApp=true; location.hash = pHash(id,color); }
+function route(){
+  const m=location.hash.match(/^#p-([a-z0-9]+)(?:-([a-z0-9]+))?$/i);
+  if(m && prod(m[1])) showProductPage(m[1], m[2]);
+  else hideProductPage();
+}
+function showProductPage(id,color){
+  const p=prod(id);
+  const sameProduct = pdCurrent===id && document.getElementById("pdPage").classList.contains("open");
+  pdCurrent=id;
+  if(!sameProduct){ pdSize=null; pdQty=1; pdOther=""; pdIdx=0; }
+  pdColor = (color && (colorsOf(p).some(c=>c.c===color)||color==="other")) ? color : (sameProduct&&pdColor?pdColor:defaultColor(p).c);
+  renderProductPage();
+  const pg=document.getElementById("pdPage");
+  pg.classList.add("open"); pg.setAttribute("aria-hidden","false");
+  document.body.classList.add("pd-open");
+  if(!sameProduct) pg.scrollTop=0;
+  document.title = P(p).name+" · Aylatelier";
+}
+function hideProductPage(){
+  const pg=document.getElementById("pdPage"); if(!pg) return;
+  pg.classList.remove("open"); pg.setAttribute("aria-hidden","true");
+  document.body.classList.remove("pd-open");
+  document.title="Aylatelier";
+}
+function backToShop(){
+  if(pdFromApp && history.length>1){ pdFromApp=false; history.back(); }
+  else { location.hash="#shop"; hideProductPage(); setTimeout(()=>goto('shop'),30); }
+}
+function setHashSilently(){
+  const h=pHash(pdCurrent,pdColor);
+  try{ history.replaceState(null,"",h); }catch(e){}
+}
+function renderProductPage(){
+  const p=prod(pdCurrent), info=P(p);
+  const isOther = pdColor==="other";
+  const g = isOther ? imgsFor(p,defaultColor(p).c) : imgsFor(p,pdColor);
+  pdImgs=g.imgs; pdIdx=Math.max(0,Math.min(pdIdx,pdImgs.length-1));
+  const cur = pdSize?priceFor(p,pdSize):null;
+  const shownName = g.shown?colorName(g.shown):"";
+  const pictNote = (!g.pictured || isOther)
+    ? `<div class="pict-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg><span>${t('picturedIn')} <b>${shownName||colorName(defaultColor(p).c)}</b>. ${t('sameDesign')}</span></div>` : "";
+  const related = PRODUCTS.filter(x=>x.id!==p.id && x.cat===p.cat).slice(0,4);
+  const allColorsWithImg = colorsOf(p).filter(c=>c.img&&c.img.length);
+  document.getElementById("pdPage").innerHTML = `
+  <div class="pd-top"><div class="wrap pd-top-in">
+    <button class="pd-back" onclick="backToShop()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="${lang==='ar'?'M9 6l6 6-6 6':'M15 6l-6 6 6 6'}"/></svg><span>${t('backToShop')}</span></button>
+    <a class="brand" onclick="backToShop()" style="cursor:pointer"><img src="${IMAGES.logo}" alt="Aylatelier"></a>
+    <div class="tools">
+      <button class="lang-toggle" onclick="toggleLang()">${lang==="ar"?"EN":"العربية"}</button>
+      <button class="icon-btn" onclick="openCart()" aria-label="cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-count" id="cartCount2">${cartCount()}</span>
+      </button>
+    </div>
+  </div></div>
+
+  <div class="wrap">
+    <div class="crumbs"><a onclick="backToShop()">${t('navShop')}</a><span>/</span><a onclick="backToShop();setTimeout(()=>onFilter('${p.cat}'),60)">${CAT[p.cat][lang]}</a><span>/</span><b>${info.name}</b></div>
+    <div class="pdp">
+      <div class="gallery">
+        <div class="g-main" id="gMain">
+          ${pdImgs.map((k,i)=>`<img class="g-img ${i===pdIdx?'on':''}" src="${IMG(k)}" alt="${info.name}${viewLabel(k)?' · '+viewLabel(k):''}" ${i?'loading="lazy"':''} onclick="openLightbox(${i})">`).join("")}
+          ${badgeHtml(p)}
+          <span class="g-view" id="gView">${viewLabel(pdImgs[pdIdx])}</span>
+          ${pdImgs.length>1?`
+          <button class="g-nav prev" onclick="gStep(-1)" aria-label="previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></button>
+          <button class="g-nav next" onclick="gStep(1)" aria-label="next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>
+          <span class="g-count" id="gCount">${pdIdx+1} / ${pdImgs.length}</span>`:""}
+          <button class="g-zoom" onclick="openLightbox(pdIdx)" aria-label="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></button>
+        </div>
+        ${pdImgs.length>1?`<div class="g-thumbs">${pdImgs.map((k,i)=>`<button class="g-th ${i===pdIdx?'on':''}" onclick="gGo(${i})"><img src="${TH(k)}" alt="">${viewLabel(k)?`<span>${viewLabel(k)}</span>`:""}</button>`).join("")}</div>`:""}
+      </div>
+
+      <div class="pd-info2">
+        <div class="cat-tag">${CAT[p.cat][lang]}</div>
+        <h1 class="pd-name">${info.name}</h1>
+        <div class="pd-price2">${cur?money(cur):fromPrice(p)}</div>
+        <div class="pd-range">${pdSize?`${t('size')} ${pdSize} ${t('yrs')}`:`${money(p.price)} – ${money(maxPrice(p))} · ${t('byPriceSize')}`}</div>
+
+        <div class="pd-block">
+          <div class="lbl"><span>${t('color')}: <b class="lbl-val">${isOther?(pdOther||t('otherColor')):colorName(pdColor)}</b></span><span class="muted small">${colorsOf(p).length}${p.anyColor?'+':''} ${t('colorsWord')}</span></div>
+          <div class="swatches">
+            ${colorsOf(p).map(c=>`<button class="sw ${pdColor===c.c?'on':''}" onclick="pickColor('${c.c}')" title="${colorName(c.c)}" aria-label="${colorName(c.c)}"><span style="background:${colorInfo(c.c).hex}"></span>${c.img&&c.img.length?'':'<i class="nophoto" title="'+t('noPhoto')+'"></i>'}</button>`).join("")}
+            ${p.anyColor?`<button class="sw sw-other ${isOther?'on':''}" onclick="pickColor('other')" title="${t('otherColor')}"><span>+</span></button>`:""}
+          </div>
+          ${isOther?`<div class="other-wrap"><input id="otherInput" class="other-in" placeholder="${t('otherColorPh')}" value="${pdOther.replace(/"/g,'&quot;')}" oninput="pdOther=this.value;document.querySelector('.lbl-val').textContent=this.value||t('otherColor');document.getElementById('pdWa').href=waHref()"></div>`:""}
+          ${pictNote}
+        </div>
+
+        <div class="pd-block">
+          <div class="lbl"><span>${t('chooseSize')} <span class="muted small">(${t('yearsWord')})</span></span><a onclick="openSize()">${t('sizeGuide')}</a></div>
+          <div class="sizes2">${SIZES.map(s=>`<button class="size2 ${pdSize===s?'on':''}" onclick="pickSize('${s}')"><b>${s}</b><small>${money(priceFor(p,s))}</small></button>`).join("")}</div>
+        </div>
+
+        <div class="pd-block pd-buy">
+          <div class="qty qty-lg"><button onclick="pdQtyStep(-1)">−</button><span id="pdQty">${pdQty}</span><button onclick="pdQtyStep(1)">+</button></div>
+          <button class="btn" onclick="addFromPage()">${t('addCart')}${cur?` · ${money(cur*pdQty)}`:""}</button>
+        </div>
+        <a class="btn wa block" id="pdWa" href="${waHref()}" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2z"/></svg>
+          ${t('orderWa')}</a>
+
+        <div class="pd-block">
+          <div class="lbl">${t('details')}</div>
+          <p class="pd-desc">${info.desc}</p>
+          <div class="fabric">${info.fabric.map(f=>`<span>${f}</span>`).join("")}</div>
+        </div>
+        <div class="pd-perks">
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 21.6 7.1 18.2 8 12.7l-4-3.9L9.5 8z"/></svg>${t('trust3t')} · ${t('trust3s')}</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M2 7h20v10H2z"/><circle cx="12" cy="12" r="2.5"/></svg>${t('trust1t')}</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 7h11v8H3zM14 10h4l3 3v2h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17.5" cy="18" r="1.6"/></svg>${t('trust2t')} · ${t('trust2s')}</div>
+        </div>
+      </div>
+    </div>
+
+    ${allColorsWithImg.length>1?`
+    <section class="pd-sec">
+      <h2>${t('allColorsHead')}</h2>
+      <div class="allc">${allColorsWithImg.map(c=>`<button class="allc-i ${pdColor===c.c?'on':''}" onclick="pickColor('${c.c}');document.getElementById('pdPage').scrollTo({top:0,behavior:'smooth'})"><img src="${TH(c.img[0])}" alt="" loading="lazy"><span><i style="background:${colorInfo(c.c).hex}"></i>${colorName(c.c)}${c.img.length>1?` · ${c.img.length} ${t('photos')}`:""}</span></button>`).join("")}</div>
+    </section>`:""}
+
+    ${related.length?`
+    <section class="pd-sec">
+      <h2>${t('youMayLike')}</h2>
+      <div class="grid rel">${related.map(cardHtml).join("")}</div>
+    </section>`:""}
+  </div>`;
+  bindSwipe();
+}
+function pickColor(c){
+  pdColor=c; pdIdx=0; renderProductPage(); setHashSilently();
+  if(c==="other"){ const i=document.getElementById("otherInput"); if(i) i.focus(); }
+}
+function pickSize(s){ pdSize=s; renderProductPage(); }
+function pdQtyStep(d){ pdQty=Math.max(1,Math.min(20,pdQty+d)); renderProductPage(); }
+function gGo(i){
+  pdIdx=(i+pdImgs.length)%pdImgs.length;
+  document.querySelectorAll("#gMain .g-img").forEach((el,j)=>el.classList.toggle("on",j===pdIdx));
+  document.querySelectorAll(".g-thumbs .g-th").forEach((el,j)=>el.classList.toggle("on",j===pdIdx));
+  const v=document.getElementById("gView"); if(v) v.textContent=viewLabel(pdImgs[pdIdx]);
+  const c=document.getElementById("gCount"); if(c) c.textContent=`${pdIdx+1} / ${pdImgs.length}`;
+}
+function gStep(d){ gGo(pdIdx + d); }
+function bindSwipe(){
+  const el=document.getElementById("gMain"); if(!el||pdImgs.length<2) return;
+  let x0=null;
+  el.addEventListener("touchstart",e=>{x0=e.touches[0].clientX;},{passive:true});
+  el.addEventListener("touchend",e=>{ if(x0===null) return; const dx=e.changedTouches[0].clientX-x0; if(Math.abs(dx)>40) gGo(pdIdx+(dx<0?1:-1)); x0=null; },{passive:true});
+}
+function currentColorKey(){
+  if(pdColor==="other"){ const v=(pdOther||"").trim(); return v?("other:"+v):null; }
+  return pdColor;
+}
+function addFromPage(){
+  if(!pdSize){ toast(t('pickSizeFirst')); return; }
+  const ck=currentColorKey();
+  if(!ck){ toast(t('typeColorFirst')); const i=document.getElementById("otherInput"); if(i) i.focus(); return; }
+  addToCart(pdCurrent,pdSize,pdQty,ck);
+}
+function waHref(){
+  const p=prod(pdCurrent); const info=P(p);
+  const ck=currentColorKey();
+  const parts=[];
+  if(ck) parts.push(`${t('color')}: ${colorName(ck)}`);
+  if(pdSize) parts.push(`${t('size')}: ${pdSize}`);
+  const price = pdSize?money(priceFor(p,pdSize)*pdQty):`${money(p.price)} – ${money(maxPrice(p))}`;
+  const msg = (lang==='ar'
+    ? `مرحباً أيلاتيليه 💗\nأودّ طلب: ${info.name}\n${parts.join(" · ")}${pdSize?`\nالكمية: ${pdQty}`:""}\nالسعر: ${price}`
+    : `Hi Aylatelier 💗\nI'd like to order: ${info.name}\n${parts.join(" · ")}${pdSize?`\nQty: ${pdQty}`:""}\nPrice: ${price}`);
+  return `https://wa.me/${STORE.whatsapp}?text=${encodeURIComponent(msg)}`;
+}
+
+/* ---------- lightbox ---------- */
+let lbIdx=0;
+function openLightbox(i){
+  lbIdx=i; renderLightbox();
+  document.getElementById("lightbox").classList.add("open");
+}
+function renderLightbox(){
+  const k=pdImgs[lbIdx];
+  document.getElementById("lbImg").src=IMG(k);
+  document.getElementById("lbCap").textContent = [P(prod(pdCurrent)).name, viewLabel(k), `${lbIdx+1} / ${pdImgs.length}`].filter(Boolean).join(" · ");
+  document.getElementById("lightbox").classList.toggle("single", pdImgs.length<2);
+}
+function lbStep(d){ lbIdx=(lbIdx+d+pdImgs.length)%pdImgs.length; renderLightbox(); gGo(lbIdx); }
+function closeLightbox(){ document.getElementById("lightbox").classList.remove("open"); }
+
+/* ---------- cart ---------- */
+function lineKey(i){ return i.id+"|"+i.size+"|"+(i.color||""); }
+function addToCart(id,size,qty,color){
+  color=color||"";
+  const ex=cart.find(i=>i.id===id&&i.size===size&&(i.color||"")===color);
+  if(ex) ex.qty+=qty; else cart.push({id,size,color,qty});
+  save(); updateCartCount(); renderCart();
+  toast(t('addedToCart')); pulseCart();
+}
+function changeQty(idx,d){
+  const it=cart[idx]; if(!it) return;
+  it.qty+=d; if(it.qty<=0) cart.splice(idx,1);
+  save(); updateCartCount(); renderCart();
+}
+function removeItem(idx){ cart.splice(idx,1); save(); updateCartCount(); renderCart(); }
+function linePrice(i){ return priceFor(prod(i.id),i.size); }
+function cartSubtotal(){ return cart.reduce((s,i)=>s+linePrice(i)*i.qty,0); }
+function cartCount(){ return cart.reduce((s,i)=>s+i.qty,0); }
+function updateCartCount(){ ["cartCount","cartCount2"].forEach(id=>{ const el=document.getElementById(id); if(el) el.textContent=cartCount(); }); }
+function pulseCart(){ ["cartCount","cartCount2"].forEach(id=>{ const el=document.getElementById(id); if(el&&el.offsetParent) el.animate([{transform:'scale(1)'},{transform:'scale(1.5)'},{transform:'scale(1)'}],{duration:350}); }); }
+function lineThumb(i){
+  const p=prod(i.id);
+  const k = (i.color&&!i.color.startsWith("other:")) ? imgsFor(p,i.color).imgs[0] : coverKey(p);
+  return TH(k);
+}
+function renderCart(){
+  const body=document.getElementById("cartBody"), foot=document.getElementById("cartFoot");
+  if(!cart.length){
+    body.innerHTML=`<div class="cart-empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg><h3 style="margin:0 0 4px">${t('cartEmpty')}</h3><p style="margin:0">${t('cartEmptySub')}</p></div>`;
+    foot.innerHTML=`<button class="btn block alt" onclick="closeCart()">${t('continueShop')}</button>`;
+    return;
+  }
+  body.innerHTML = cart.map((i,idx)=>{
+    const p=prod(i.id), info=P(p);
+    const sw = i.color && !i.color.startsWith("other:") ? `<span class="swatch" style="background:${colorInfo(i.color).hex}"></span>` : "";
+    return `<div class="cart-line">
+      <a class="thumb" href="${pHash(i.id,i.color&&!i.color.startsWith('other:')?i.color:'')}" onclick="closeCart();pdFromApp=true"><img src="${lineThumb(i)}" alt=""></a>
+      <div class="cl-info">
+        <b>${info.name}</b>
+        ${i.color?`<small>${sw}${t('color')}: ${colorName(i.color)}</small><br>`:""}
+        <small>${t('size')}: ${i.size} ${t('yrs')}</small>
+        <div class="cl-price">${money(linePrice(i)*i.qty)}${i.qty>1?` <span class="muted small">(${money(linePrice(i))} × ${i.qty})</span>`:""}</div>
+        <div class="qty">
+          <button onclick="changeQty(${idx},-1)">−</button>
+          <span>${i.qty}</span>
+          <button onclick="changeQty(${idx},1)">+</button>
+        </div>
+        <div><a class="remove" onclick="removeItem(${idx})">${lang==='ar'?'إزالة':'Remove'}</a></div>
+      </div>
+    </div>`;
+  }).join("");
+  foot.innerHTML = `
+    <div class="sumline"><span>${t('subtotal')}</span><b>${money(cartSubtotal())}</b></div>
+    <div class="sumline muted"><span>${t('shipping')}</span><span>${t('shipAtCheckout')}</span></div>
+    <button class="btn block" style="margin-top:8px" onclick="openCheckout()">${t('checkout')} · ${money(cartSubtotal())}</button>`;
+}
+
+/* ---------- checkout ---------- */
+function openCheckout(){
+  if(!cart.length){ toast(t('cartEmpty')); return; }
+  closeCart();
+  coPayment="cod";
+  renderCheckout();
+  showModal("checkoutModal");
+}
+function renderCheckout(){
+  const govOpts = `<option value="">${t('selectGov')}</option>` + GOV.map((g,i)=>`<option value="${i}">${g[lang]}</option>`).join("");
+  document.getElementById("coTitle").textContent=t('checkout');
+  document.getElementById("coBody").innerHTML = `
+    <div style="font-weight:600;margin-bottom:12px">${t('coContact')}</div>
+    <div class="co-field"><label>${t('fullName')}</label><input id="coName" autocomplete="name"></div>
+    <div class="co-field"><label>${t('phone')}</label><input id="coPhone" dir="ltr" inputmode="tel" placeholder="+20 10 1234 5678" autocomplete="tel"></div>
+    <div class="co-2">
+      <div class="co-field"><label>${t('gov')}</label><select id="coGov" onchange="renderCoSummary()">${govOpts}</select></div>
+      <div class="co-field"><label>${t('cityArea')}</label><input id="coCity"></div>
+    </div>
+    <div class="co-field"><label>${t('address')}</label><input id="coAddr" autocomplete="street-address"></div>
+    <div class="co-field"><label>${t('notes')}</label><textarea id="coNotes" rows="2" placeholder="${t('notesPh')}"></textarea></div>
+
+    <div style="font-weight:600;margin:18px 0 12px">${t('payMethod')}</div>
+    <div class="pay-opts" id="payOpts">
+      ${payOpt('cod','cod','codSub','<path d="M2 7h20v10H2z"/><circle cx="12" cy="12" r="2.5"/>')}
+      ${payOpt('wallet','wallet','walletSub','<rect x="4" y="6" width="16" height="12" rx="2"/><path d="M16 12h2"/>')}
+      ${payOpt('instapay','instapay','instapaySub','<path d="M3 12h18M12 3v18"/>')}
+      ${payOpt('card','cardDel','cardDelSub','<rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/>')}
+    </div>
+
+    <div style="font-weight:600;margin:18px 0 10px">${t('orderSummary')}</div>
+    <div id="coSummary"></div>
+    <button class="btn block" style="margin-top:16px" onclick="placeOrder()">${t('placeOrder')}</button>
+    <p class="muted" style="font-size:12.5px;text-align:center;margin:10px 0 0">${t('madeNote')}</p>`;
+  renderCoSummary();
+}
+function payOpt(val,tk,sk,ic){
+  return `<label class="pay-opt ${coPayment===val?'active':''}" onclick="setPay('${val}')">
+    <input type="radio" name="pay" ${coPayment===val?'checked':''}>
+    <span class="po-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">${ic}</svg></span>
+    <span><b>${t(tk)}</b><small>${t(sk)}</small></span>
+  </label>`;
+}
+function setPay(v){ coPayment=v; document.querySelectorAll('#payOpts .pay-opt').forEach(el=>el.classList.remove('active')); event.currentTarget.classList.add('active'); const r=event.currentTarget.querySelector('input'); if(r)r.checked=true; }
+function shipFee(){ const gi=document.getElementById("coGov").value; if(gi==="") return null; if(cartSubtotal()>=STORE.freeShipOver) return 0; return GOV[gi].fee; }
+function renderCoSummary(){
+  const fee=shipFee(); const sub=cartSubtotal();
+  const feeTxt = fee===null?`<span class="muted">${t('shipAtCheckout')}</span>`:(fee===0?`<b style="color:var(--ok)">${t('freeShip')}</b>`:`<b>${money(fee)}</b>`);
+  const total = sub + (fee||0);
+  document.getElementById("coSummary").innerHTML = `
+    <div class="sumline"><span>${t('subtotal')} (${cartCount()} ${cartCount()===1?t('item'):t('items')})</span><span>${money(sub)}</span></div>
+    <div class="sumline"><span>${t('shipping')}</span>${feeTxt}</div>
+    <div class="sumline total"><span>${t('total')}</span><span>${money(total)}</span></div>`;
+}
+function placeOrder(){
+  const name=document.getElementById("coName"), phone=document.getElementById("coPhone"),
+        gov=document.getElementById("coGov"), addr=document.getElementById("coAddr");
+  let ok=true;
+  [name,phone,gov,addr].forEach(f=>{ if(!f.value.trim()){ f.classList.add("err"); ok=false; } else f.classList.remove("err"); });
+  const digits=(phone.value.match(/\d/g)||[]).length;
+  if(phone.value.trim() && digits<10){ phone.classList.add("err"); ok=false; }
+  if(!ok){ toast(lang==='ar'?'من فضلكِ أكملي البيانات':'Please complete the form'); return; }
+
+  const gi=gov.value, fee=(cartSubtotal()>=STORE.freeShipOver?0:GOV[gi].fee), sub=cartSubtotal(), total=sub+fee;
+  const orderNo = "AYL-"+Math.floor(100000+Math.random()*900000);
+  const data={name:name.value.trim(),phone:phone.value.trim(),gov:GOV[gi],city:document.getElementById("coCity").value.trim(),addr:addr.value.trim(),notes:document.getElementById("coNotes").value.trim(),fee,sub,total,orderNo,pay:coPayment};
+  const wa = buildWaLink(data);
+
+  document.getElementById("coBody").innerHTML = `
+    <div class="co-success">
+      <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></div>
+      <h2>${t('orderPlaced')}</h2>
+      <p class="muted">${t('orderThanks')}</p>
+      <div class="order-no">${t('yourOrder')}: ${orderNo}</div>
+      <div class="sumline total" style="justify-content:center;gap:10px;border:none">${t('total')}: ${money(total)}</div>
+      <p class="muted" style="font-size:14px;margin:14px 0 16px">${t('waHint')}</p>
+      <a class="btn wa block" href="${wa}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2z"/></svg>
+        ${t('sendWa')}</a>
+      <button class="btn alt block" style="margin-top:10px" onclick="finishOrder()">${t('keepShopping')}</button>
+    </div>`;
+  cart=[]; save(); updateCartCount();
+}
+function buildWaLink(d){
+  const lines = cart.map(i=>{const p=prod(i.id),info=P(p);return `• ${info.name}${i.color?` · ${t('color')}: ${colorName(i.color)}`:''} (${t('size')} ${i.size}) x${i.qty} = ${money(linePrice(i)*i.qty)}`;}).join("\n");
+  const payLabel = {cod:t('cod'),wallet:t('wallet'),instapay:t('instapay'),card:t('cardDel')}[d.pay];
+  const feeTxt = d.fee===0?t('freeShip'):money(d.fee);
+  let m;
+  if(lang==='ar'){
+    m=`طلب جديد 💗 ${d.orderNo}\n\n${lines}\n\nالإجمالي الفرعي: ${money(d.sub)}\nالشحن (${d.gov.ar}): ${feeTxt}\nالإجمالي: ${money(d.total)}\n\nالاسم: ${d.name}\nالهاتف: ${d.phone}\nالمحافظة: ${d.gov.ar}\nالمنطقة: ${d.city}\nالعنوان: ${d.addr}\nملاحظات: ${d.notes||'-'}\nالدفع: ${payLabel}`;
+  }else{
+    m=`New order 💗 ${d.orderNo}\n\n${lines}\n\nSubtotal: ${money(d.sub)}\nShipping (${d.gov.en}): ${feeTxt}\nTotal: ${money(d.total)}\n\nName: ${d.name}\nPhone: ${d.phone}\nGovernorate: ${d.gov.en}\nArea: ${d.city}\nAddress: ${d.addr}\nNotes: ${d.notes||'-'}\nPayment: ${payLabel}`;
+  }
+  return `https://wa.me/${STORE.whatsapp}?text=${encodeURIComponent(m)}`;
+}
+function finishOrder(){ closeCheckout(); renderCart(); }
+function closeCheckout(){ hideModal("checkoutModal"); }
+
+/* ---------- size guide ---------- */
+function openSize(){
+  const rows=[["2-3","92-98","2-3"],["4-5","104-110","4-5"],["6-7","116-122","6-7"],["8-9","128-134","8-9"]];
+  const h = lang==='ar'
+    ? ["المقاس (بالسنة)","الطول (سم)","العمر التقريبي"]
+    : ["Size (years)","Height (cm)","Approx. age"];
+  document.getElementById("sizeBody").innerHTML = `
+    <p class="muted" style="margin:0 0 12px;font-size:14px">${lang==='ar'?'كل قطعنا بمقاسات حسب عمر الطفلة من ٢ إلى ٩ سنوات. لو بين مقاسين، اختاري الأكبر. كل مقاس أكبر يزيد السعر '+SIZE_STEP+' ج.م. لمقاس مفصّل راسلينا على واتساب.':'All our pieces are sized by age, from 2 to 9 years. Between two sizes? Choose the larger. Each size up adds EGP '+SIZE_STEP+' to the price. For a custom fit, message us on WhatsApp.'}</p>
+    <table class="sg-table"><thead><tr>${h.map(x=>`<th>${x}</th>`).join("")}</tr></thead>
+    <tbody>${rows.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join("")}</tbody></table>
+    <a class="btn wa block" style="margin-top:16px" href="https://wa.me/${STORE.whatsapp}" target="_blank" rel="noopener">${lang==='ar'?'اطلبي مقاساً مفصّلاً':'Request a custom size'}</a>`;
+  showModal("sizeModal");
+}
+function closeSize(){ hideModal("sizeModal"); }
+
+/* ---------- drawer / overlay / menu ---------- */
+function openCart(){ renderCart(); document.getElementById("cartDrawer").classList.add("open"); document.getElementById("overlay").classList.add("show"); lockScroll(true); }
+function closeCart(){ document.getElementById("cartDrawer").classList.remove("open"); maybeUnlock(); }
+function openMenu(){ document.getElementById("mmenu").classList.add("open"); document.getElementById("overlay").classList.add("show"); lockScroll(true); }
+function closeMenu(){ document.getElementById("mmenu").classList.remove("open"); maybeUnlock(); }
+function showModal(id){ document.getElementById(id).classList.add("open"); lockScroll(true); }
+function hideModal(id){ document.getElementById(id).classList.remove("open"); maybeUnlock(); }
+function closeAll(){ document.querySelectorAll(".drawer,.modal,.mmenu").forEach(e=>e.classList.remove("open")); document.getElementById("overlay").classList.remove("show"); lockScroll(false); }
+function maybeUnlock(){
+  const anyOpen = document.querySelector(".drawer.open,.modal.open,.mmenu.open");
+  if(!anyOpen){ document.getElementById("overlay").classList.remove("show"); lockScroll(false); }
+}
+function lockScroll(on){ document.body.style.overflow = on?"hidden":""; }
+
+/* ---------- misc ---------- */
+function subscribe(e){ e.preventDefault(); e.target.reset(); toast(t('newsThanks')); }
+let toastTimer;
+function toast(msg){
+  const t2=document.getElementById("toastT");
+  t2.innerHTML=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>${msg}`;
+  t2.classList.add("show"); clearTimeout(toastTimer);
+  toastTimer=setTimeout(()=>t2.classList.remove("show"),2200);
+}
+document.addEventListener("keydown",e=>{
+  const lb=document.getElementById("lightbox");
+  if(lb.classList.contains("open")){ if(e.key==="Escape") closeLightbox(); if(e.key==="ArrowRight") lbStep(1); if(e.key==="ArrowLeft") lbStep(-1); return; }
+  if(e.key==="Escape"){ if(document.querySelector(".drawer.open,.modal.open,.mmenu.open")) closeAll(); else if(document.body.classList.contains("pd-open")) backToShop(); }
+});
+
+/* ---------- init ---------- */
+applyLang();
+renderApp();
+window.addEventListener("hashchange",route);
+route();
+</script>
+</body>
+</html>
